@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dA:/Documents/GitHub/LC3_v2/ALU/simulation/qsim
+vALU
+Z1 !s110 1552504360
+!i10b 1
+!s100 IM24X8_>=1:mlVCoO7?Y?1
+IRKc32BG6dPFSN27Md01D73
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1552504360
+Z4 8ALU.vo
+Z5 FALU.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1552504360.000000
+Z8 !s107 ALU.vo|
+Z9 !s90 -work|work|ALU.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@a@l@u
+vALU_vlg_vec_tst
+R1
+!i10b 1
+!s100 `FzKZXdJ7>nM5l3VNTNj^3
+IJED>U4`k;Og=7S1OT4a]g3
+R2
+R0
+w1552504359
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@a@l@u_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 dBmXMR_>8DBMD0fOQf`RF3
+IA3[f5Xe?@JIe]2Mk@`JjN1
+R2
+R0
+R3
+R4
+R5
+L0 2138
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

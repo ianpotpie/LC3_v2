@@ -1,0 +1,651 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "03/13/2019 15:12:39"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          ALU
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module ALU_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [1:0] ALUMUX_Control;
+reg [15:0] IR;
+reg [15:0] SR1_In;
+reg SR2MUX_Control;
+reg [15:0] SR2_In;
+// wires                                               
+wire [15:0] ALU_Out;
+
+// assign statements (if any)                          
+ALU i1 (
+// port map - connection between master ports and signals/registers   
+	.ALUMUX_Control(ALUMUX_Control),
+	.ALU_Out(ALU_Out),
+	.IR(IR),
+	.SR1_In(SR1_In),
+	.SR2MUX_Control(SR2MUX_Control),
+	.SR2_In(SR2_In)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// ALUMUX_Control[ 1 ]
+always
+begin
+	ALUMUX_Control[1] = 1'b0;
+	ALUMUX_Control[1] = #500000 1'b1;
+	#500000;
+end 
+// ALUMUX_Control[ 0 ]
+always
+begin
+	ALUMUX_Control[0] = 1'b0;
+	ALUMUX_Control[0] = #250000 1'b1;
+	#250000;
+end 
+
+// SR2MUX_Control
+always
+begin
+	SR2MUX_Control = 1'b0;
+	SR2MUX_Control = #125000 1'b1;
+	#125000;
+end 
+// IR[ 15 ]
+initial
+begin
+	IR[15] = 1'b1;
+end 
+// IR[ 14 ]
+initial
+begin
+	IR[14] = 1'b0;
+end 
+// IR[ 13 ]
+initial
+begin
+	IR[13] = 1'b0;
+end 
+// IR[ 12 ]
+initial
+begin
+	IR[12] = 1'b1;
+end 
+// IR[ 11 ]
+initial
+begin
+	IR[11] = 1'b1;
+end 
+// IR[ 10 ]
+initial
+begin
+	IR[10] = 1'b1;
+end 
+// IR[ 9 ]
+initial
+begin
+	IR[9] = 1'b0;
+end 
+// IR[ 8 ]
+initial
+begin
+	IR[8] = 1'b0;
+end 
+// IR[ 7 ]
+initial
+begin
+	IR[7] = 1'b0;
+end 
+// IR[ 6 ]
+initial
+begin
+	IR[6] = 1'b0;
+end 
+// IR[ 5 ]
+initial
+begin
+	IR[5] = 1'b0;
+end 
+// IR[ 4 ]
+always
+begin
+	IR[4] = 1'b0;
+	IR[4] = #62500 1'b1;
+	#62500;
+end 
+// IR[ 3 ]
+initial
+begin
+	IR[3] = 1'b0;
+	IR[3] = #100000 1'b1;
+	IR[3] = #150000 1'b0;
+	IR[3] = #300000 1'b1;
+	IR[3] = #50000 1'b0;
+	IR[3] = #150000 1'b1;
+	IR[3] = #50000 1'b0;
+	IR[3] = #50000 1'b1;
+	IR[3] = #50000 1'b0;
+	IR[3] = #50000 1'b1;
+end 
+// IR[ 2 ]
+initial
+begin
+	IR[2] = 1'b0;
+	IR[2] = #50000 1'b1;
+	IR[2] = #100000 1'b0;
+	IR[2] = #50000 1'b1;
+	IR[2] = #50000 1'b0;
+	IR[2] = #50000 1'b1;
+	IR[2] = #400000 1'b0;
+	IR[2] = #100000 1'b1;
+	IR[2] = #100000 1'b0;
+	IR[2] = #50000 1'b1;
+end 
+// IR[ 1 ]
+initial
+begin
+	IR[1] = 1'b0;
+	IR[1] = #50000 1'b1;
+	IR[1] = #50000 1'b0;
+	IR[1] = #50000 1'b1;
+	IR[1] = #50000 1'b0;
+	IR[1] = #50000 1'b1;
+	IR[1] = #100000 1'b0;
+	IR[1] = #150000 1'b1;
+	IR[1] = #50000 1'b0;
+	IR[1] = #250000 1'b1;
+	IR[1] = #50000 1'b0;
+	IR[1] = #50000 1'b1;
+end 
+// IR[ 0 ]
+initial
+begin
+	IR[0] = 1'b0;
+	IR[0] = #50000 1'b1;
+	IR[0] = #200000 1'b0;
+	IR[0] = #50000 1'b1;
+	IR[0] = #100000 1'b0;
+	IR[0] = #100000 1'b1;
+	IR[0] = #50000 1'b0;
+	IR[0] = #50000 1'b1;
+	IR[0] = #50000 1'b0;
+	IR[0] = #200000 1'b1;
+	IR[0] = #100000 1'b0;
+end 
+// SR1_In[ 15 ]
+initial
+begin
+	SR1_In[15] = 1'b0;
+	SR1_In[15] = #100000 1'b1;
+	SR1_In[15] = #100000 1'b0;
+	SR1_In[15] = #50000 1'b1;
+	SR1_In[15] = #50000 1'b0;
+	SR1_In[15] = #50000 1'b1;
+	SR1_In[15] = #50000 1'b0;
+	SR1_In[15] = #100000 1'b1;
+	SR1_In[15] = #100000 1'b0;
+	SR1_In[15] = #150000 1'b1;
+end 
+// SR1_In[ 14 ]
+initial
+begin
+	SR1_In[14] = 1'b1;
+	SR1_In[14] = #50000 1'b0;
+	SR1_In[14] = #350000 1'b1;
+	SR1_In[14] = #150000 1'b0;
+	SR1_In[14] = #100000 1'b1;
+	SR1_In[14] = #50000 1'b0;
+	SR1_In[14] = #50000 1'b1;
+	SR1_In[14] = #50000 1'b0;
+	SR1_In[14] = #100000 1'b1;
+end 
+// SR1_In[ 13 ]
+initial
+begin
+	SR1_In[13] = 1'b1;
+	SR1_In[13] = #50000 1'b0;
+	SR1_In[13] = #50000 1'b1;
+	SR1_In[13] = #50000 1'b0;
+	SR1_In[13] = #50000 1'b1;
+	SR1_In[13] = #50000 1'b0;
+	SR1_In[13] = #100000 1'b1;
+	SR1_In[13] = #300000 1'b0;
+	SR1_In[13] = #300000 1'b1;
+end 
+// SR1_In[ 12 ]
+initial
+begin
+	SR1_In[12] = 1'b1;
+	SR1_In[12] = #50000 1'b0;
+	SR1_In[12] = #50000 1'b1;
+	SR1_In[12] = #100000 1'b0;
+	SR1_In[12] = #200000 1'b1;
+	SR1_In[12] = #350000 1'b0;
+	SR1_In[12] = #50000 1'b1;
+end 
+// SR1_In[ 11 ]
+initial
+begin
+	SR1_In[11] = 1'b0;
+	SR1_In[11] = #200000 1'b1;
+	SR1_In[11] = #50000 1'b0;
+	SR1_In[11] = #50000 1'b1;
+	SR1_In[11] = #50000 1'b0;
+	SR1_In[11] = #50000 1'b1;
+	SR1_In[11] = #100000 1'b0;
+	SR1_In[11] = #50000 1'b1;
+	SR1_In[11] = #50000 1'b0;
+	SR1_In[11] = #50000 1'b1;
+	SR1_In[11] = #200000 1'b0;
+	SR1_In[11] = #50000 1'b1;
+	SR1_In[11] = #50000 1'b0;
+end 
+// SR1_In[ 10 ]
+initial
+begin
+	SR1_In[10] = 1'b0;
+	SR1_In[10] = #100000 1'b1;
+	SR1_In[10] = #200000 1'b0;
+	SR1_In[10] = #100000 1'b1;
+	SR1_In[10] = #50000 1'b0;
+	SR1_In[10] = #50000 1'b1;
+	SR1_In[10] = #50000 1'b0;
+	SR1_In[10] = #50000 1'b1;
+	SR1_In[10] = #50000 1'b0;
+	SR1_In[10] = #50000 1'b1;
+	SR1_In[10] = #100000 1'b0;
+	SR1_In[10] = #100000 1'b1;
+end 
+// SR1_In[ 9 ]
+initial
+begin
+	SR1_In[9] = 1'b1;
+	SR1_In[9] = #200000 1'b0;
+	SR1_In[9] = #100000 1'b1;
+	SR1_In[9] = #250000 1'b0;
+	SR1_In[9] = #300000 1'b1;
+	SR1_In[9] = #100000 1'b0;
+end 
+// SR1_In[ 8 ]
+initial
+begin
+	SR1_In[8] = 1'b1;
+	SR1_In[8] = #300000 1'b0;
+	SR1_In[8] = #150000 1'b1;
+	SR1_In[8] = #100000 1'b0;
+	SR1_In[8] = #100000 1'b1;
+	SR1_In[8] = #50000 1'b0;
+	SR1_In[8] = #100000 1'b1;
+	SR1_In[8] = #50000 1'b0;
+	SR1_In[8] = #100000 1'b1;
+end 
+// SR1_In[ 7 ]
+initial
+begin
+	SR1_In[7] = 1'b1;
+	SR1_In[7] = #200000 1'b0;
+	SR1_In[7] = #50000 1'b1;
+	SR1_In[7] = #50000 1'b0;
+	SR1_In[7] = #50000 1'b1;
+	SR1_In[7] = #50000 1'b0;
+	SR1_In[7] = #100000 1'b1;
+	SR1_In[7] = #50000 1'b0;
+	SR1_In[7] = #100000 1'b1;
+	SR1_In[7] = #50000 1'b0;
+	SR1_In[7] = #50000 1'b1;
+	SR1_In[7] = #50000 1'b0;
+	SR1_In[7] = #50000 1'b1;
+	SR1_In[7] = #100000 1'b0;
+end 
+// SR1_In[ 6 ]
+initial
+begin
+	SR1_In[6] = 1'b0;
+	SR1_In[6] = #100000 1'b1;
+	SR1_In[6] = #250000 1'b0;
+	SR1_In[6] = #50000 1'b1;
+	SR1_In[6] = #100000 1'b0;
+	SR1_In[6] = #150000 1'b1;
+	SR1_In[6] = #50000 1'b0;
+	SR1_In[6] = #50000 1'b1;
+	SR1_In[6] = #50000 1'b0;
+	SR1_In[6] = #50000 1'b1;
+end 
+// SR1_In[ 5 ]
+initial
+begin
+	SR1_In[5] = 1'b0;
+	SR1_In[5] = #100000 1'b1;
+	SR1_In[5] = #50000 1'b0;
+	SR1_In[5] = #50000 1'b1;
+	SR1_In[5] = #250000 1'b0;
+	SR1_In[5] = #100000 1'b1;
+	SR1_In[5] = #50000 1'b0;
+	SR1_In[5] = #50000 1'b1;
+	SR1_In[5] = #150000 1'b0;
+	SR1_In[5] = #50000 1'b1;
+	SR1_In[5] = #50000 1'b0;
+end 
+// SR1_In[ 4 ]
+initial
+begin
+	SR1_In[4] = 1'b1;
+	SR1_In[4] = #100000 1'b0;
+	SR1_In[4] = #50000 1'b1;
+	SR1_In[4] = #50000 1'b0;
+	SR1_In[4] = #150000 1'b1;
+	SR1_In[4] = #100000 1'b0;
+	SR1_In[4] = #100000 1'b1;
+	SR1_In[4] = #50000 1'b0;
+	SR1_In[4] = #250000 1'b1;
+	SR1_In[4] = #50000 1'b0;
+	SR1_In[4] = #50000 1'b1;
+end 
+// SR1_In[ 3 ]
+initial
+begin
+	SR1_In[3] = 1'b1;
+	SR1_In[3] = #100000 1'b0;
+	SR1_In[3] = #100000 1'b1;
+	SR1_In[3] = #50000 1'b0;
+	SR1_In[3] = #100000 1'b1;
+	SR1_In[3] = #250000 1'b0;
+	SR1_In[3] = #150000 1'b1;
+	SR1_In[3] = #50000 1'b0;
+	SR1_In[3] = #100000 1'b1;
+end 
+// SR1_In[ 2 ]
+initial
+begin
+	SR1_In[2] = 1'b1;
+	SR1_In[2] = #50000 1'b0;
+	SR1_In[2] = #50000 1'b1;
+	SR1_In[2] = #150000 1'b0;
+	SR1_In[2] = #50000 1'b1;
+	SR1_In[2] = #100000 1'b0;
+	SR1_In[2] = #50000 1'b1;
+	SR1_In[2] = #100000 1'b0;
+	SR1_In[2] = #100000 1'b1;
+	SR1_In[2] = #50000 1'b0;
+	SR1_In[2] = #150000 1'b1;
+	SR1_In[2] = #50000 1'b0;
+end 
+// SR1_In[ 1 ]
+initial
+begin
+	SR1_In[1] = 1'b0;
+	SR1_In[1] = #50000 1'b1;
+	SR1_In[1] = #100000 1'b0;
+	SR1_In[1] = #200000 1'b1;
+	SR1_In[1] = #100000 1'b0;
+	SR1_In[1] = #150000 1'b1;
+	SR1_In[1] = #100000 1'b0;
+	SR1_In[1] = #200000 1'b1;
+	SR1_In[1] = #50000 1'b0;
+end 
+// SR1_In[ 0 ]
+initial
+begin
+	SR1_In[0] = 1'b0;
+	SR1_In[0] = #150000 1'b1;
+	SR1_In[0] = #50000 1'b0;
+	SR1_In[0] = #150000 1'b1;
+	SR1_In[0] = #100000 1'b0;
+	SR1_In[0] = #100000 1'b1;
+	SR1_In[0] = #50000 1'b0;
+	SR1_In[0] = #50000 1'b1;
+	SR1_In[0] = #100000 1'b0;
+	SR1_In[0] = #100000 1'b1;
+	SR1_In[0] = #100000 1'b0;
+end 
+// SR2_In[ 15 ]
+initial
+begin
+	SR2_In[15] = 1'b1;
+	SR2_In[15] = #50000 1'b0;
+	SR2_In[15] = #50000 1'b1;
+	SR2_In[15] = #100000 1'b0;
+	SR2_In[15] = #150000 1'b1;
+	SR2_In[15] = #50000 1'b0;
+	SR2_In[15] = #150000 1'b1;
+	SR2_In[15] = #100000 1'b0;
+	SR2_In[15] = #100000 1'b1;
+	SR2_In[15] = #100000 1'b0;
+end 
+// SR2_In[ 14 ]
+initial
+begin
+	SR2_In[14] = 1'b1;
+	SR2_In[14] = #50000 1'b0;
+	SR2_In[14] = #200000 1'b1;
+	SR2_In[14] = #150000 1'b0;
+	SR2_In[14] = #50000 1'b1;
+	SR2_In[14] = #50000 1'b0;
+	SR2_In[14] = #100000 1'b1;
+	SR2_In[14] = #150000 1'b0;
+end 
+// SR2_In[ 13 ]
+initial
+begin
+	SR2_In[13] = 1'b0;
+	SR2_In[13] = #50000 1'b1;
+	SR2_In[13] = #750000 1'b0;
+	SR2_In[13] = #50000 1'b1;
+	SR2_In[13] = #50000 1'b0;
+end 
+// SR2_In[ 12 ]
+initial
+begin
+	SR2_In[12] = 1'b0;
+	SR2_In[12] = #50000 1'b1;
+	SR2_In[12] = #200000 1'b0;
+	SR2_In[12] = #150000 1'b1;
+	SR2_In[12] = #150000 1'b0;
+	SR2_In[12] = #50000 1'b1;
+	SR2_In[12] = #150000 1'b0;
+	SR2_In[12] = #150000 1'b1;
+	SR2_In[12] = #50000 1'b0;
+end 
+// SR2_In[ 11 ]
+initial
+begin
+	SR2_In[11] = 1'b1;
+	SR2_In[11] = #150000 1'b0;
+	SR2_In[11] = #50000 1'b1;
+	SR2_In[11] = #50000 1'b0;
+	SR2_In[11] = #100000 1'b1;
+	SR2_In[11] = #100000 1'b0;
+	SR2_In[11] = #150000 1'b1;
+	SR2_In[11] = #50000 1'b0;
+	SR2_In[11] = #100000 1'b1;
+	SR2_In[11] = #150000 1'b0;
+end 
+// SR2_In[ 10 ]
+initial
+begin
+	SR2_In[10] = 1'b1;
+	SR2_In[10] = #50000 1'b0;
+	SR2_In[10] = #50000 1'b1;
+	SR2_In[10] = #50000 1'b0;
+	SR2_In[10] = #100000 1'b1;
+	SR2_In[10] = #50000 1'b0;
+	SR2_In[10] = #50000 1'b1;
+	SR2_In[10] = #100000 1'b0;
+	SR2_In[10] = #200000 1'b1;
+	SR2_In[10] = #100000 1'b0;
+	SR2_In[10] = #50000 1'b1;
+end 
+// SR2_In[ 9 ]
+initial
+begin
+	SR2_In[9] = 1'b0;
+	SR2_In[9] = #150000 1'b1;
+	SR2_In[9] = #100000 1'b0;
+	SR2_In[9] = #50000 1'b1;
+	SR2_In[9] = #50000 1'b0;
+	SR2_In[9] = #50000 1'b1;
+	SR2_In[9] = #50000 1'b0;
+	SR2_In[9] = #350000 1'b1;
+	SR2_In[9] = #50000 1'b0;
+	SR2_In[9] = #50000 1'b1;
+	SR2_In[9] = #50000 1'b0;
+end 
+// SR2_In[ 8 ]
+initial
+begin
+	SR2_In[8] = 1'b1;
+	SR2_In[8] = #50000 1'b0;
+	SR2_In[8] = #50000 1'b1;
+	SR2_In[8] = #250000 1'b0;
+	SR2_In[8] = #50000 1'b1;
+	SR2_In[8] = #250000 1'b0;
+	SR2_In[8] = #100000 1'b1;
+	SR2_In[8] = #50000 1'b0;
+	SR2_In[8] = #100000 1'b1;
+	SR2_In[8] = #50000 1'b0;
+end 
+// SR2_In[ 7 ]
+initial
+begin
+	SR2_In[7] = 1'b0;
+	SR2_In[7] = #100000 1'b1;
+	SR2_In[7] = #150000 1'b0;
+	SR2_In[7] = #50000 1'b1;
+	SR2_In[7] = #50000 1'b0;
+	SR2_In[7] = #100000 1'b1;
+	SR2_In[7] = #50000 1'b0;
+	SR2_In[7] = #50000 1'b1;
+	SR2_In[7] = #50000 1'b0;
+	SR2_In[7] = #100000 1'b1;
+	SR2_In[7] = #200000 1'b0;
+end 
+// SR2_In[ 6 ]
+initial
+begin
+	SR2_In[6] = 1'b0;
+	SR2_In[6] = #50000 1'b1;
+	SR2_In[6] = #200000 1'b0;
+	SR2_In[6] = #150000 1'b1;
+	SR2_In[6] = #150000 1'b0;
+	SR2_In[6] = #50000 1'b1;
+	SR2_In[6] = #200000 1'b0;
+	SR2_In[6] = #100000 1'b1;
+	SR2_In[6] = #50000 1'b0;
+end 
+// SR2_In[ 5 ]
+initial
+begin
+	SR2_In[5] = 1'b0;
+	SR2_In[5] = #250000 1'b1;
+	SR2_In[5] = #50000 1'b0;
+	SR2_In[5] = #100000 1'b1;
+	SR2_In[5] = #150000 1'b0;
+	SR2_In[5] = #200000 1'b1;
+	SR2_In[5] = #50000 1'b0;
+	SR2_In[5] = #100000 1'b1;
+	SR2_In[5] = #50000 1'b0;
+end 
+// SR2_In[ 4 ]
+initial
+begin
+	SR2_In[4] = 1'b1;
+	SR2_In[4] = #50000 1'b0;
+	SR2_In[4] = #150000 1'b1;
+	SR2_In[4] = #50000 1'b0;
+	SR2_In[4] = #50000 1'b1;
+	SR2_In[4] = #50000 1'b0;
+	SR2_In[4] = #50000 1'b1;
+	SR2_In[4] = #150000 1'b0;
+	SR2_In[4] = #50000 1'b1;
+	SR2_In[4] = #100000 1'b0;
+	SR2_In[4] = #50000 1'b1;
+end 
+// SR2_In[ 3 ]
+initial
+begin
+	SR2_In[3] = 1'b0;
+	SR2_In[3] = #50000 1'b1;
+	SR2_In[3] = #50000 1'b0;
+	SR2_In[3] = #150000 1'b1;
+	SR2_In[3] = #50000 1'b0;
+	SR2_In[3] = #50000 1'b1;
+	SR2_In[3] = #50000 1'b0;
+	SR2_In[3] = #50000 1'b1;
+	SR2_In[3] = #50000 1'b0;
+	SR2_In[3] = #50000 1'b1;
+	SR2_In[3] = #50000 1'b0;
+	SR2_In[3] = #150000 1'b1;
+	SR2_In[3] = #150000 1'b0;
+	SR2_In[3] = #50000 1'b1;
+end 
+// SR2_In[ 2 ]
+initial
+begin
+	SR2_In[2] = 1'b1;
+	SR2_In[2] = #100000 1'b0;
+	SR2_In[2] = #100000 1'b1;
+	SR2_In[2] = #100000 1'b0;
+	SR2_In[2] = #150000 1'b1;
+	SR2_In[2] = #100000 1'b0;
+	SR2_In[2] = #50000 1'b1;
+	SR2_In[2] = #50000 1'b0;
+	SR2_In[2] = #150000 1'b1;
+end 
+// SR2_In[ 1 ]
+initial
+begin
+	SR2_In[1] = 1'b0;
+	SR2_In[1] = #150000 1'b1;
+	SR2_In[1] = #50000 1'b0;
+	SR2_In[1] = #50000 1'b1;
+	SR2_In[1] = #50000 1'b0;
+	SR2_In[1] = #50000 1'b1;
+	SR2_In[1] = #50000 1'b0;
+	SR2_In[1] = #200000 1'b1;
+	SR2_In[1] = #100000 1'b0;
+	SR2_In[1] = #100000 1'b1;
+	SR2_In[1] = #50000 1'b0;
+	SR2_In[1] = #100000 1'b1;
+end 
+// SR2_In[ 0 ]
+initial
+begin
+	SR2_In[0] = 1'b0;
+	SR2_In[0] = #50000 1'b1;
+	SR2_In[0] = #50000 1'b0;
+	SR2_In[0] = #50000 1'b1;
+	SR2_In[0] = #150000 1'b0;
+	SR2_In[0] = #50000 1'b1;
+	SR2_In[0] = #50000 1'b0;
+	SR2_In[0] = #50000 1'b1;
+	SR2_In[0] = #50000 1'b0;
+	SR2_In[0] = #50000 1'b1;
+	SR2_In[0] = #50000 1'b0;
+	SR2_In[0] = #50000 1'b1;
+	SR2_In[0] = #250000 1'b0;
+	SR2_In[0] = #50000 1'b1;
+end 
+endmodule
+
