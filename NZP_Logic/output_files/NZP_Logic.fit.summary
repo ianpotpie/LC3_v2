@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Mar 13 18:04:52 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : NZP_Logic
+Top-level Entity Name : NZP_Logic
+Family : Cyclone IV E
+Device : EP4CE10F17C7
+Timing Models : Final
+Total logic elements : 23 / 10,320 ( < 1 % )
+    Total combinational functions : 23 / 10,320 ( < 1 % )
+    Dedicated logic registers : 16 / 10,320 ( < 1 % )
+Total registers : 16
+Total pins : 22 / 180 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
