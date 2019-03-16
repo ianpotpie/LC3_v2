@@ -1,0 +1,221 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "PC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Control[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Control[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Load_PC",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Bus[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUX_Adder[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for NZP_Logic
-Wed Mar 13 18:04:48 2019
+Sat Mar 16 03:23:59 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,13 +43,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 13 18:04:48 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 16 03:23:59 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; NZP_Logic                                   ;
 ; Top-level Entity Name              ; NZP_Logic                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 23                                          ;
-;     Total combinational functions  ; 23                                          ;
+; Total logic elements               ; 24                                          ;
+;     Total combinational functions  ; 24                                          ;
 ;     Dedicated logic registers      ; 16                                          ;
 ; Total registers                    ; 16                                          ;
 ; Total pins                         ; 22                                          ;
@@ -154,23 +155,22 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+--------------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
-; File Name with User-Entered Path     ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ; Library ;
-+--------------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
-; ../Misc_Modules/Negedge_DFF.v        ; yes             ; User Verilog HDL File  ; A:/Documents/GitHub/LC3_v2/Misc_Modules/Negedge_DFF.v        ;         ;
-; ../Misc_Modules/Negedge_16Register.v ; yes             ; User Verilog HDL File  ; A:/Documents/GitHub/LC3_v2/Misc_Modules/Negedge_16Register.v ;         ;
-; NZP_Logic.v                          ; yes             ; User Verilog HDL File  ; A:/Documents/GitHub/LC3_v2/NZP_Logic/NZP_Logic.v             ;         ;
-+--------------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
++---------------------------------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                              ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                          ; Library ;
++---------------------------------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; ../Misc_Modules/Negedge_DSwitch_16Reg/Negedge_DSwitch_16Reg.v ; yes             ; User Verilog HDL File  ; A:/Documents/GitHub/LC3_v2/Misc_Modules/Negedge_DSwitch_16Reg/Negedge_DSwitch_16Reg.v ;         ;
+; ../Misc_Modules/Negedge_DSwitch/Negedge_DSwitch.v             ; yes             ; User Verilog HDL File  ; A:/Documents/GitHub/LC3_v2/Misc_Modules/Negedge_DSwitch/Negedge_DSwitch.v             ;         ;
+; NZP_Logic.v                                                   ; yes             ; User Verilog HDL File  ; A:/Documents/GitHub/LC3_v2/NZP_Logic/NZP_Logic.v                                      ;         ;
++---------------------------------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -178,16 +178,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 23          ;
+; Estimated Total logic elements              ; 24          ;
 ;                                             ;             ;
-; Total combinational functions               ; 23          ;
+; Total combinational functions               ; 24          ;
 ; Logic element usage by number of LUT inputs ;             ;
 ;     -- 4 input functions                    ; 4           ;
-;     -- 3 input functions                    ; 17          ;
-;     -- <=2 input functions                  ; 2           ;
+;     -- 3 input functions                    ; 1           ;
+;     -- <=2 input functions                  ; 19          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 23          ;
+;     -- normal mode                          ; 24          ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 16          ;
@@ -198,37 +198,37 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
-; Maximum fan-out node                        ; Clock~input ;
-; Maximum fan-out                             ; 16          ;
-; Total fan-out                               ; 144         ;
-; Average fan-out                             ; 1.73        ;
+; Maximum fan-out node                        ; Reset~input ;
+; Maximum fan-out                             ; 17          ;
+; Total fan-out                               ; 130         ;
+; Average fan-out                             ; 1.55        ;
 +---------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                        ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                        ; Entity Name        ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+--------------------+--------------+
-; |NZP_Logic                     ; 23 (7)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |NZP_Logic                                                 ; NZP_Logic          ; work         ;
-;    |Negedge_16Register:Logic|  ; 16 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic                        ; Negedge_16Register ; work         ;
-;       |Negedge_DFF:Neg_DFF_0|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_0  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_10| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_10 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_11| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_11 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_12| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_12 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_13| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_13 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_14| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_14 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_15| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_15 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_1|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_1  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_2|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_2  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_3|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_3  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_4|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_4  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_5|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_5  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_6|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_6  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_7|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_7  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_8|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_8  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_9|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_9  ; Negedge_DFF        ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+--------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                    ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Entity Name           ; Library Name ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+-----------------------+--------------+
+; |NZP_Logic                        ; 24 (7)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |NZP_Logic                                                       ; NZP_Logic             ; work         ;
+;    |Negedge_DSwitch_16Reg:Logic|  ; 17 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic                           ; Negedge_DSwitch_16Reg ; work         ;
+;       |Negedge_DSwitch:Switch_0|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_0  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_10| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_10 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_11| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_11 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_12| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_12 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_13| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_13 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_14| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_14 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_15| ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_15 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_1|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_1  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_2|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_2  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_3|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_3  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_4|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_4  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_5|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_5  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_6|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_6  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_7|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_7  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_8|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_8  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_9|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_9  ; Negedge_DSwitch       ; work         ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -238,13 +238,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 16    ;
-; Number of registers using Synchronous Clear  ; 16    ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_15|Q ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -254,16 +263,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; boundary_port         ; 22                          ;
 ; cycloneiii_ff         ; 16                          ;
-;     SCLR              ; 16                          ;
-; cycloneiii_lcell_comb ; 24                          ;
-;     normal            ; 24                          ;
+;     ENA               ; 16                          ;
+; cycloneiii_lcell_comb ; 25                          ;
+;     normal            ; 25                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 17                          ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 4                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.14                        ;
+; Average LUT depth     ; 2.13                        ;
 +-----------------------+-----------------------------+
 
 
@@ -282,30 +291,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Mar 13 18:04:39 2019
+    Info: Processing started: Sat Mar 16 03:23:51 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NZP_Logic -c NZP_Logic
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /documents/github/lc3_v2/misc_modules/negedge_dff.v
-    Info (12023): Found entity 1: Negedge_DFF File: A:/Documents/GitHub/LC3_v2/Misc_Modules/Negedge_DFF.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /documents/github/lc3_v2/misc_modules/negedge_16register.v
-    Info (12023): Found entity 1: Negedge_16Register File: A:/Documents/GitHub/LC3_v2/Misc_Modules/Negedge_16Register.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /documents/github/lc3_v2/misc_modules/negedge_dswitch_16reg/negedge_dswitch_16reg.v
+    Info (12023): Found entity 1: Negedge_DSwitch_16Reg File: A:/Documents/GitHub/LC3_v2/Misc_Modules/Negedge_DSwitch_16Reg/Negedge_DSwitch_16Reg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /documents/github/lc3_v2/misc_modules/negedge_dswitch/negedge_dswitch.v
+    Info (12023): Found entity 1: Negedge_DSwitch File: A:/Documents/GitHub/LC3_v2/Misc_Modules/Negedge_DSwitch/Negedge_DSwitch.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nzp_logic.v
     Info (12023): Found entity 1: NZP_Logic File: A:/Documents/GitHub/LC3_v2/NZP_Logic/NZP_Logic.v Line: 1
 Info (12127): Elaborating entity "NZP_Logic" for the top level hierarchy
-Info (12128): Elaborating entity "Negedge_16Register" for hierarchy "Negedge_16Register:Logic" File: A:/Documents/GitHub/LC3_v2/NZP_Logic/NZP_Logic.v Line: 15
-Info (12128): Elaborating entity "Negedge_DFF" for hierarchy "Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_15" File: A:/Documents/GitHub/LC3_v2/Misc_Modules/Negedge_16Register.v Line: 11
+Info (12128): Elaborating entity "Negedge_DSwitch_16Reg" for hierarchy "Negedge_DSwitch_16Reg:Logic" File: A:/Documents/GitHub/LC3_v2/NZP_Logic/NZP_Logic.v Line: 15
+Info (12128): Elaborating entity "Negedge_DSwitch" for hierarchy "Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_15" File: A:/Documents/GitHub/LC3_v2/Misc_Modules/Negedge_DSwitch_16Reg/Negedge_DSwitch_16Reg.v Line: 11
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 46 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 23 logic cells
+    Info (21061): Implemented 24 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Wed Mar 13 18:04:48 2019
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 4780 megabytes
+    Info: Processing ended: Sat Mar 16 03:23:59 2019
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:16
 
 

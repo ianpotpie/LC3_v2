@@ -1,0 +1,166 @@
+|Negedge_DSwitch_16Reg
+Clk => Clk.IN16
+Reset => Reset.IN16
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+D[5] => D[5].IN1
+D[6] => D[6].IN1
+D[7] => D[7].IN1
+D[8] => D[8].IN1
+D[9] => D[9].IN1
+D[10] => D[10].IN1
+D[11] => D[11].IN1
+D[12] => D[12].IN1
+D[13] => D[13].IN1
+D[14] => D[14].IN1
+D[15] => D[15].IN1
+WE => WE.IN16
+Q[0] <= Negedge_DSwitch:Switch_0.port4
+Q[1] <= Negedge_DSwitch:Switch_1.port4
+Q[2] <= Negedge_DSwitch:Switch_2.port4
+Q[3] <= Negedge_DSwitch:Switch_3.port4
+Q[4] <= Negedge_DSwitch:Switch_4.port4
+Q[5] <= Negedge_DSwitch:Switch_5.port4
+Q[6] <= Negedge_DSwitch:Switch_6.port4
+Q[7] <= Negedge_DSwitch:Switch_7.port4
+Q[8] <= Negedge_DSwitch:Switch_8.port4
+Q[9] <= Negedge_DSwitch:Switch_9.port4
+Q[10] <= Negedge_DSwitch:Switch_10.port4
+Q[11] <= Negedge_DSwitch:Switch_11.port4
+Q[12] <= Negedge_DSwitch:Switch_12.port4
+Q[13] <= Negedge_DSwitch:Switch_13.port4
+Q[14] <= Negedge_DSwitch:Switch_14.port4
+Q[15] <= Negedge_DSwitch:Switch_15.port4
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_15
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_14
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_13
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_12
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_11
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_10
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_9
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_8
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_7
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_6
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_5
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_4
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_3
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_2
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_1
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negedge_DSwitch_16Reg|Negedge_DSwitch:Switch_0
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

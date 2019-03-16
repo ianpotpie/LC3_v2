@@ -1,0 +1,1057 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "03/16/2019 03:59:10"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module MARMUX (
+	MARMUX_Adder,
+	IR,
+	MARMUX_Control,
+	MARMUX);
+input 	[15:0] MARMUX_Adder;
+input 	[15:0] IR;
+input 	MARMUX_Control;
+output 	[15:0] MARMUX;
+
+// Design Ports Information
+// IR[8]	=>  Location: PIN_AE10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[9]	=>  Location: PIN_AG8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[10]	=>  Location: PIN_AB19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[11]	=>  Location: PIN_AF7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[12]	=>  Location: PIN_E4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[13]	=>  Location: PIN_Y10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[14]	=>  Location: PIN_AF16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[15]	=>  Location: PIN_AF8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[0]	=>  Location: PIN_AE3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[1]	=>  Location: PIN_AD1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[2]	=>  Location: PIN_AB3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[3]	=>  Location: PIN_AA4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[4]	=>  Location: PIN_AB4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[5]	=>  Location: PIN_AA7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[6]	=>  Location: PIN_AB6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[7]	=>  Location: PIN_AD3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[8]	=>  Location: PIN_W4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[9]	=>  Location: PIN_Y6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[10]	=>  Location: PIN_AC2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[11]	=>  Location: PIN_AA6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[12]	=>  Location: PIN_W1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[13]	=>  Location: PIN_T8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[14]	=>  Location: PIN_Y7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX[15]	=>  Location: PIN_AA5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[0]	=>  Location: PIN_AC5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[0]	=>  Location: PIN_AF2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Control	=>  Location: PIN_AB5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[1]	=>  Location: PIN_U8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[1]	=>  Location: PIN_AC1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[2]	=>  Location: PIN_AC3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[2]	=>  Location: PIN_V7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[3]	=>  Location: PIN_V5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[3]	=>  Location: PIN_V8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[4]	=>  Location: PIN_W8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[4]	=>  Location: PIN_Y4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[5]	=>  Location: PIN_W7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[5]	=>  Location: PIN_Y5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[6]	=>  Location: PIN_AC4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[6]	=>  Location: PIN_AE6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// IR[7]	=>  Location: PIN_Y3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[7]	=>  Location: PIN_AD2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[8]	=>  Location: PIN_U5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[9]	=>  Location: PIN_W3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[10]	=>  Location: PIN_AD4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[11]	=>  Location: PIN_U7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[12]	=>  Location: PIN_AE2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[13]	=>  Location: PIN_AE1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[14]	=>  Location: PIN_AA3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// MARMUX_Adder[15]	=>  Location: PIN_V6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("MARMUX_7_1200mv_0c_v_slow.sdo");
+// synopsys translate_on
+
+wire \IR[8]~input_o ;
+wire \IR[9]~input_o ;
+wire \IR[10]~input_o ;
+wire \IR[11]~input_o ;
+wire \IR[12]~input_o ;
+wire \IR[13]~input_o ;
+wire \IR[14]~input_o ;
+wire \IR[15]~input_o ;
+wire \MARMUX[0]~output_o ;
+wire \MARMUX[1]~output_o ;
+wire \MARMUX[2]~output_o ;
+wire \MARMUX[3]~output_o ;
+wire \MARMUX[4]~output_o ;
+wire \MARMUX[5]~output_o ;
+wire \MARMUX[6]~output_o ;
+wire \MARMUX[7]~output_o ;
+wire \MARMUX[8]~output_o ;
+wire \MARMUX[9]~output_o ;
+wire \MARMUX[10]~output_o ;
+wire \MARMUX[11]~output_o ;
+wire \MARMUX[12]~output_o ;
+wire \MARMUX[13]~output_o ;
+wire \MARMUX[14]~output_o ;
+wire \MARMUX[15]~output_o ;
+wire \MARMUX_Adder[0]~input_o ;
+wire \IR[0]~input_o ;
+wire \MARMUX_Control~input_o ;
+wire \MARMUX~0_combout ;
+wire \IR[1]~input_o ;
+wire \MARMUX_Adder[1]~input_o ;
+wire \MARMUX~1_combout ;
+wire \MARMUX_Adder[2]~input_o ;
+wire \IR[2]~input_o ;
+wire \MARMUX~2_combout ;
+wire \IR[3]~input_o ;
+wire \MARMUX_Adder[3]~input_o ;
+wire \MARMUX~3_combout ;
+wire \MARMUX_Adder[4]~input_o ;
+wire \IR[4]~input_o ;
+wire \MARMUX~4_combout ;
+wire \MARMUX_Adder[5]~input_o ;
+wire \IR[5]~input_o ;
+wire \MARMUX~5_combout ;
+wire \IR[6]~input_o ;
+wire \MARMUX_Adder[6]~input_o ;
+wire \MARMUX~6_combout ;
+wire \MARMUX_Adder[7]~input_o ;
+wire \IR[7]~input_o ;
+wire \MARMUX~7_combout ;
+wire \MARMUX_Adder[8]~input_o ;
+wire \MARMUX~8_combout ;
+wire \MARMUX_Adder[9]~input_o ;
+wire \MARMUX~9_combout ;
+wire \MARMUX_Adder[10]~input_o ;
+wire \MARMUX~10_combout ;
+wire \MARMUX_Adder[11]~input_o ;
+wire \MARMUX~11_combout ;
+wire \MARMUX_Adder[12]~input_o ;
+wire \MARMUX~12_combout ;
+wire \MARMUX_Adder[13]~input_o ;
+wire \MARMUX~13_combout ;
+wire \MARMUX_Adder[14]~input_o ;
+wire \MARMUX~14_combout ;
+wire \MARMUX_Adder[15]~input_o ;
+wire \MARMUX~15_combout ;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X0_Y7_N9
+cycloneive_io_obuf \MARMUX[0]~output (
+	.i(\MARMUX~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[0]~output .bus_hold = "false";
+defparam \MARMUX[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y21_N16
+cycloneive_io_obuf \MARMUX[1]~output (
+	.i(\MARMUX~1_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[1]~output .bus_hold = "false";
+defparam \MARMUX[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y21_N23
+cycloneive_io_obuf \MARMUX[2]~output (
+	.i(\MARMUX~2_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[2]~output .bus_hold = "false";
+defparam \MARMUX[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y19_N2
+cycloneive_io_obuf \MARMUX[3]~output (
+	.i(\MARMUX~3_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[3]~output .bus_hold = "false";
+defparam \MARMUX[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y8_N23
+cycloneive_io_obuf \MARMUX[4]~output (
+	.i(\MARMUX~4_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[4]~output .bus_hold = "false";
+defparam \MARMUX[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y9_N16
+cycloneive_io_obuf \MARMUX[5]~output (
+	.i(\MARMUX~5_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[5]~output .bus_hold = "false";
+defparam \MARMUX[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y4_N9
+cycloneive_io_obuf \MARMUX[6]~output (
+	.i(\MARMUX~6_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[6]~output .bus_hold = "false";
+defparam \MARMUX[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y22_N16
+cycloneive_io_obuf \MARMUX[7]~output (
+	.i(\MARMUX~7_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[7]~output .bus_hold = "false";
+defparam \MARMUX[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y14_N9
+cycloneive_io_obuf \MARMUX[8]~output (
+	.i(\MARMUX~8_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[8]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[8]~output .bus_hold = "false";
+defparam \MARMUX[8]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y13_N9
+cycloneive_io_obuf \MARMUX[9]~output (
+	.i(\MARMUX~9_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[9]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[9]~output .bus_hold = "false";
+defparam \MARMUX[9]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y24_N23
+cycloneive_io_obuf \MARMUX[10]~output (
+	.i(\MARMUX~10_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[10]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[10]~output .bus_hold = "false";
+defparam \MARMUX[10]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y10_N16
+cycloneive_io_obuf \MARMUX[11]~output (
+	.i(\MARMUX~11_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[11]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[11]~output .bus_hold = "false";
+defparam \MARMUX[11]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y25_N16
+cycloneive_io_obuf \MARMUX[12]~output (
+	.i(\MARMUX~12_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[12]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[12]~output .bus_hold = "false";
+defparam \MARMUX[12]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y20_N16
+cycloneive_io_obuf \MARMUX[13]~output (
+	.i(\MARMUX~13_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[13]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[13]~output .bus_hold = "false";
+defparam \MARMUX[13]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y11_N23
+cycloneive_io_obuf \MARMUX[14]~output (
+	.i(\MARMUX~14_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[14]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[14]~output .bus_hold = "false";
+defparam \MARMUX[14]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y10_N23
+cycloneive_io_obuf \MARMUX[15]~output (
+	.i(\MARMUX~15_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\MARMUX[15]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \MARMUX[15]~output .bus_hold = "false";
+defparam \MARMUX[15]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y6_N1
+cycloneive_io_ibuf \MARMUX_Adder[0]~input (
+	.i(MARMUX_Adder[0]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[0]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[0]~input .bus_hold = "false";
+defparam \MARMUX_Adder[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y5_N15
+cycloneive_io_ibuf \IR[0]~input (
+	.i(IR[0]),
+	.ibar(gnd),
+	.o(\IR[0]~input_o ));
+// synopsys translate_off
+defparam \IR[0]~input .bus_hold = "false";
+defparam \IR[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y4_N22
+cycloneive_io_ibuf \MARMUX_Control~input (
+	.i(MARMUX_Control),
+	.ibar(gnd),
+	.o(\MARMUX_Control~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Control~input .bus_hold = "false";
+defparam \MARMUX_Control~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y7_N16
+cycloneive_lcell_comb \MARMUX~0 (
+// Equation(s):
+// \MARMUX~0_combout  = (\MARMUX_Control~input_o  & ((\IR[0]~input_o ))) # (!\MARMUX_Control~input_o  & (\MARMUX_Adder[0]~input_o ))
+
+	.dataa(\MARMUX_Adder[0]~input_o ),
+	.datab(\IR[0]~input_o ),
+	.datac(\MARMUX_Control~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\MARMUX~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~0 .lut_mask = 16'hCACA;
+defparam \MARMUX~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y18_N22
+cycloneive_io_ibuf \IR[1]~input (
+	.i(IR[1]),
+	.ibar(gnd),
+	.o(\IR[1]~input_o ));
+// synopsys translate_off
+defparam \IR[1]~input .bus_hold = "false";
+defparam \IR[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y23_N15
+cycloneive_io_ibuf \MARMUX_Adder[1]~input (
+	.i(MARMUX_Adder[1]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[1]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[1]~input .bus_hold = "false";
+defparam \MARMUX_Adder[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y21_N16
+cycloneive_lcell_comb \MARMUX~1 (
+// Equation(s):
+// \MARMUX~1_combout  = (\MARMUX_Control~input_o  & (\IR[1]~input_o )) # (!\MARMUX_Control~input_o  & ((\MARMUX_Adder[1]~input_o )))
+
+	.dataa(\MARMUX_Control~input_o ),
+	.datab(gnd),
+	.datac(\IR[1]~input_o ),
+	.datad(\MARMUX_Adder[1]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~1 .lut_mask = 16'hF5A0;
+defparam \MARMUX~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y14_N1
+cycloneive_io_ibuf \MARMUX_Adder[2]~input (
+	.i(MARMUX_Adder[2]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[2]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[2]~input .bus_hold = "false";
+defparam \MARMUX_Adder[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y23_N22
+cycloneive_io_ibuf \IR[2]~input (
+	.i(IR[2]),
+	.ibar(gnd),
+	.o(\IR[2]~input_o ));
+// synopsys translate_off
+defparam \IR[2]~input .bus_hold = "false";
+defparam \IR[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y18_N0
+cycloneive_lcell_comb \MARMUX~2 (
+// Equation(s):
+// \MARMUX~2_combout  = (\MARMUX_Control~input_o  & ((\IR[2]~input_o ))) # (!\MARMUX_Control~input_o  & (\MARMUX_Adder[2]~input_o ))
+
+	.dataa(\MARMUX_Control~input_o ),
+	.datab(gnd),
+	.datac(\MARMUX_Adder[2]~input_o ),
+	.datad(\IR[2]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~2 .lut_mask = 16'hFA50;
+defparam \MARMUX~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y15_N15
+cycloneive_io_ibuf \IR[3]~input (
+	.i(IR[3]),
+	.ibar(gnd),
+	.o(\IR[3]~input_o ));
+// synopsys translate_off
+defparam \IR[3]~input .bus_hold = "false";
+defparam \IR[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y15_N22
+cycloneive_io_ibuf \MARMUX_Adder[3]~input (
+	.i(MARMUX_Adder[3]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[3]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[3]~input .bus_hold = "false";
+defparam \MARMUX_Adder[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y15_N8
+cycloneive_lcell_comb \MARMUX~3 (
+// Equation(s):
+// \MARMUX~3_combout  = (\MARMUX_Control~input_o  & (\IR[3]~input_o )) # (!\MARMUX_Control~input_o  & ((\MARMUX_Adder[3]~input_o )))
+
+	.dataa(\IR[3]~input_o ),
+	.datab(gnd),
+	.datac(\MARMUX_Control~input_o ),
+	.datad(\MARMUX_Adder[3]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~3 .lut_mask = 16'hAFA0;
+defparam \MARMUX~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y24_N8
+cycloneive_io_ibuf \MARMUX_Adder[4]~input (
+	.i(MARMUX_Adder[4]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[4]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[4]~input .bus_hold = "false";
+defparam \MARMUX_Adder[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N15
+cycloneive_io_ibuf \IR[4]~input (
+	.i(IR[4]),
+	.ibar(gnd),
+	.o(\IR[4]~input_o ));
+// synopsys translate_off
+defparam \IR[4]~input .bus_hold = "false";
+defparam \IR[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y12_N8
+cycloneive_lcell_comb \MARMUX~4 (
+// Equation(s):
+// \MARMUX~4_combout  = (\MARMUX_Control~input_o  & ((\IR[4]~input_o ))) # (!\MARMUX_Control~input_o  & (\MARMUX_Adder[4]~input_o ))
+
+	.dataa(\MARMUX_Control~input_o ),
+	.datab(\MARMUX_Adder[4]~input_o ),
+	.datac(gnd),
+	.datad(\IR[4]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~4 .lut_mask = 16'hEE44;
+defparam \MARMUX~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y12_N15
+cycloneive_io_ibuf \MARMUX_Adder[5]~input (
+	.i(MARMUX_Adder[5]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[5]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[5]~input .bus_hold = "false";
+defparam \MARMUX_Adder[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y12_N22
+cycloneive_io_ibuf \IR[5]~input (
+	.i(IR[5]),
+	.ibar(gnd),
+	.o(\IR[5]~input_o ));
+// synopsys translate_off
+defparam \IR[5]~input .bus_hold = "false";
+defparam \IR[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y12_N26
+cycloneive_lcell_comb \MARMUX~5 (
+// Equation(s):
+// \MARMUX~5_combout  = (\MARMUX_Control~input_o  & ((\IR[5]~input_o ))) # (!\MARMUX_Control~input_o  & (\MARMUX_Adder[5]~input_o ))
+
+	.dataa(\MARMUX_Adder[5]~input_o ),
+	.datab(gnd),
+	.datac(\MARMUX_Control~input_o ),
+	.datad(\IR[5]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~5 .lut_mask = 16'hFA0A;
+defparam \MARMUX~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y4_N1
+cycloneive_io_ibuf \IR[6]~input (
+	.i(IR[6]),
+	.ibar(gnd),
+	.o(\IR[6]~input_o ));
+// synopsys translate_off
+defparam \IR[6]~input .bus_hold = "false";
+defparam \IR[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y0_N15
+cycloneive_io_ibuf \MARMUX_Adder[6]~input (
+	.i(MARMUX_Adder[6]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[6]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[6]~input .bus_hold = "false";
+defparam \MARMUX_Adder[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y4_N16
+cycloneive_lcell_comb \MARMUX~6 (
+// Equation(s):
+// \MARMUX~6_combout  = (\MARMUX_Control~input_o  & (\IR[6]~input_o )) # (!\MARMUX_Control~input_o  & ((\MARMUX_Adder[6]~input_o )))
+
+	.dataa(\IR[6]~input_o ),
+	.datab(\MARMUX_Control~input_o ),
+	.datac(gnd),
+	.datad(\MARMUX_Adder[6]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~6 .lut_mask = 16'hBB88;
+defparam \MARMUX~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y22_N22
+cycloneive_io_ibuf \MARMUX_Adder[7]~input (
+	.i(MARMUX_Adder[7]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[7]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[7]~input .bus_hold = "false";
+defparam \MARMUX_Adder[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y24_N15
+cycloneive_io_ibuf \IR[7]~input (
+	.i(IR[7]),
+	.ibar(gnd),
+	.o(\IR[7]~input_o ));
+// synopsys translate_off
+defparam \IR[7]~input .bus_hold = "false";
+defparam \IR[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y22_N16
+cycloneive_lcell_comb \MARMUX~7 (
+// Equation(s):
+// \MARMUX~7_combout  = (\MARMUX_Control~input_o  & ((\IR[7]~input_o ))) # (!\MARMUX_Control~input_o  & (\MARMUX_Adder[7]~input_o ))
+
+	.dataa(\MARMUX_Control~input_o ),
+	.datab(\MARMUX_Adder[7]~input_o ),
+	.datac(gnd),
+	.datad(\IR[7]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~7 .lut_mask = 16'hEE44;
+defparam \MARMUX~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y24_N1
+cycloneive_io_ibuf \MARMUX_Adder[8]~input (
+	.i(MARMUX_Adder[8]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[8]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[8]~input .bus_hold = "false";
+defparam \MARMUX_Adder[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y18_N26
+cycloneive_lcell_comb \MARMUX~8 (
+// Equation(s):
+// \MARMUX~8_combout  = (!\MARMUX_Control~input_o  & \MARMUX_Adder[8]~input_o )
+
+	.dataa(\MARMUX_Control~input_o ),
+	.datab(gnd),
+	.datac(\MARMUX_Adder[8]~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\MARMUX~8_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~8 .lut_mask = 16'h5050;
+defparam \MARMUX~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y13_N1
+cycloneive_io_ibuf \MARMUX_Adder[9]~input (
+	.i(MARMUX_Adder[9]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[9]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[9]~input .bus_hold = "false";
+defparam \MARMUX_Adder[9]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y13_N16
+cycloneive_lcell_comb \MARMUX~9 (
+// Equation(s):
+// \MARMUX~9_combout  = (!\MARMUX_Control~input_o  & \MARMUX_Adder[9]~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\MARMUX_Control~input_o ),
+	.datad(\MARMUX_Adder[9]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~9_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~9 .lut_mask = 16'h0F00;
+defparam \MARMUX~9 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y0_N8
+cycloneive_io_ibuf \MARMUX_Adder[10]~input (
+	.i(MARMUX_Adder[10]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[10]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[10]~input .bus_hold = "false";
+defparam \MARMUX_Adder[10]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y16_N0
+cycloneive_lcell_comb \MARMUX~10 (
+// Equation(s):
+// \MARMUX~10_combout  = (!\MARMUX_Control~input_o  & \MARMUX_Adder[10]~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\MARMUX_Control~input_o ),
+	.datad(\MARMUX_Adder[10]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~10_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~10 .lut_mask = 16'h0F00;
+defparam \MARMUX~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y18_N15
+cycloneive_io_ibuf \MARMUX_Adder[11]~input (
+	.i(MARMUX_Adder[11]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[11]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[11]~input .bus_hold = "false";
+defparam \MARMUX_Adder[11]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y18_N20
+cycloneive_lcell_comb \MARMUX~11 (
+// Equation(s):
+// \MARMUX~11_combout  = (!\MARMUX_Control~input_o  & \MARMUX_Adder[11]~input_o )
+
+	.dataa(\MARMUX_Control~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\MARMUX_Adder[11]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~11_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~11 .lut_mask = 16'h5500;
+defparam \MARMUX~11 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y17_N15
+cycloneive_io_ibuf \MARMUX_Adder[12]~input (
+	.i(MARMUX_Adder[12]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[12]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[12]~input .bus_hold = "false";
+defparam \MARMUX_Adder[12]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y17_N16
+cycloneive_lcell_comb \MARMUX~12 (
+// Equation(s):
+// \MARMUX~12_combout  = (!\MARMUX_Control~input_o  & \MARMUX_Adder[12]~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\MARMUX_Control~input_o ),
+	.datad(\MARMUX_Adder[12]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~12_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~12 .lut_mask = 16'h0F00;
+defparam \MARMUX~12 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y16_N15
+cycloneive_io_ibuf \MARMUX_Adder[13]~input (
+	.i(MARMUX_Adder[13]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[13]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[13]~input .bus_hold = "false";
+defparam \MARMUX_Adder[13]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y16_N26
+cycloneive_lcell_comb \MARMUX~13 (
+// Equation(s):
+// \MARMUX~13_combout  = (!\MARMUX_Control~input_o  & \MARMUX_Adder[13]~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\MARMUX_Control~input_o ),
+	.datad(\MARMUX_Adder[13]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~13_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~13 .lut_mask = 16'h0F00;
+defparam \MARMUX~13 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y19_N8
+cycloneive_io_ibuf \MARMUX_Adder[14]~input (
+	.i(MARMUX_Adder[14]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[14]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[14]~input .bus_hold = "false";
+defparam \MARMUX_Adder[14]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y15_N26
+cycloneive_lcell_comb \MARMUX~14 (
+// Equation(s):
+// \MARMUX~14_combout  = (!\MARMUX_Control~input_o  & \MARMUX_Adder[14]~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\MARMUX_Control~input_o ),
+	.datad(\MARMUX_Adder[14]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~14_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~14 .lut_mask = 16'h0F00;
+defparam \MARMUX~14 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y16_N22
+cycloneive_io_ibuf \MARMUX_Adder[15]~input (
+	.i(MARMUX_Adder[15]),
+	.ibar(gnd),
+	.o(\MARMUX_Adder[15]~input_o ));
+// synopsys translate_off
+defparam \MARMUX_Adder[15]~input .bus_hold = "false";
+defparam \MARMUX_Adder[15]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y16_N28
+cycloneive_lcell_comb \MARMUX~15 (
+// Equation(s):
+// \MARMUX~15_combout  = (!\MARMUX_Control~input_o  & \MARMUX_Adder[15]~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\MARMUX_Control~input_o ),
+	.datad(\MARMUX_Adder[15]~input_o ),
+	.cin(gnd),
+	.combout(\MARMUX~15_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MARMUX~15 .lut_mask = 16'h0F00;
+defparam \MARMUX~15 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X29_Y0_N22
+cycloneive_io_ibuf \IR[8]~input (
+	.i(IR[8]),
+	.ibar(gnd),
+	.o(\IR[8]~input_o ));
+// synopsys translate_off
+defparam \IR[8]~input .bus_hold = "false";
+defparam \IR[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X18_Y0_N1
+cycloneive_io_ibuf \IR[9]~input (
+	.i(IR[9]),
+	.ibar(gnd),
+	.o(\IR[9]~input_o ));
+// synopsys translate_off
+defparam \IR[9]~input .bus_hold = "false";
+defparam \IR[9]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X98_Y0_N22
+cycloneive_io_ibuf \IR[10]~input (
+	.i(IR[10]),
+	.ibar(gnd),
+	.o(\IR[10]~input_o ));
+// synopsys translate_off
+defparam \IR[10]~input .bus_hold = "false";
+defparam \IR[10]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X20_Y0_N8
+cycloneive_io_ibuf \IR[11]~input (
+	.i(IR[11]),
+	.ibar(gnd),
+	.o(\IR[11]~input_o ));
+// synopsys translate_off
+defparam \IR[11]~input .bus_hold = "false";
+defparam \IR[11]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y73_N8
+cycloneive_io_ibuf \IR[12]~input (
+	.i(IR[12]),
+	.ibar(gnd),
+	.o(\IR[12]~input_o ));
+// synopsys translate_off
+defparam \IR[12]~input .bus_hold = "false";
+defparam \IR[12]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X7_Y0_N8
+cycloneive_io_ibuf \IR[13]~input (
+	.i(IR[13]),
+	.ibar(gnd),
+	.o(\IR[13]~input_o ));
+// synopsys translate_off
+defparam \IR[13]~input .bus_hold = "false";
+defparam \IR[13]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X65_Y0_N15
+cycloneive_io_ibuf \IR[14]~input (
+	.i(IR[14]),
+	.ibar(gnd),
+	.o(\IR[14]~input_o ));
+// synopsys translate_off
+defparam \IR[14]~input .bus_hold = "false";
+defparam \IR[14]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X23_Y0_N15
+cycloneive_io_ibuf \IR[15]~input (
+	.i(IR[15]),
+	.ibar(gnd),
+	.o(\IR[15]~input_o ));
+// synopsys translate_off
+defparam \IR[15]~input .bus_hold = "false";
+defparam \IR[15]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign MARMUX[0] = \MARMUX[0]~output_o ;
+
+assign MARMUX[1] = \MARMUX[1]~output_o ;
+
+assign MARMUX[2] = \MARMUX[2]~output_o ;
+
+assign MARMUX[3] = \MARMUX[3]~output_o ;
+
+assign MARMUX[4] = \MARMUX[4]~output_o ;
+
+assign MARMUX[5] = \MARMUX[5]~output_o ;
+
+assign MARMUX[6] = \MARMUX[6]~output_o ;
+
+assign MARMUX[7] = \MARMUX[7]~output_o ;
+
+assign MARMUX[8] = \MARMUX[8]~output_o ;
+
+assign MARMUX[9] = \MARMUX[9]~output_o ;
+
+assign MARMUX[10] = \MARMUX[10]~output_o ;
+
+assign MARMUX[11] = \MARMUX[11]~output_o ;
+
+assign MARMUX[12] = \MARMUX[12]~output_o ;
+
+assign MARMUX[13] = \MARMUX[13]~output_o ;
+
+assign MARMUX[14] = \MARMUX[14]~output_o ;
+
+assign MARMUX[15] = \MARMUX[15]~output_o ;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_FLASH_nCE_nCSO~~padout ;
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_FLASH_nCE_nCSO~~ibuf_o ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+
+
+endmodule

@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dA:/Documents/GitHub/LC3_v2/Misc_Modules/Posedge_DSwitch/simulation/qsim
+vhard_block
+Z1 !s110 1552691444
+!i10b 1
+!s100 8T7IMFV[8`e32zQ75jMFc2
+Ih73_LBZ0IbL_FX8nJWIYR2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1552691443
+Z4 8Posedge_DSwitch.vo
+Z5 FPosedge_DSwitch.vo
+L0 169
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1552691444.000000
+Z8 !s107 Posedge_DSwitch.vo|
+Z9 !s90 -work|work|Posedge_DSwitch.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vPosedge_DSwitch
+R1
+!i10b 1
+!s100 LiRNf3R5z23DcS430>>Nn3
+IjI6BMVKPfaP[MAT;[C@;:0
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@posedge_@d@switch
+vPosedge_DSwitch_vlg_vec_tst
+R1
+!i10b 1
+!s100 M6E:=8CJ@kJX9VP3f1IP20
+IzHO<C:]CHG?>ZOHkg953i0
+R2
+R0
+R3
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@posedge_@d@switch_vlg_vec_tst

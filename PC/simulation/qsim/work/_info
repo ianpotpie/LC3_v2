@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dA:/Documents/GitHub/LC3_v2/PC/simulation/qsim
+vhard_block
+Z1 !s110 1552724602
+!i10b 1
+!s100 >FWibk`Mi9dUi`YDCRznZ1
+If_gmnD5F8X5a>RF6J_<T60
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1552724601
+Z4 8PC.vo
+Z5 FPC.vo
+L0 1742
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1552724602.000000
+Z8 !s107 PC.vo|
+Z9 !s90 -work|work|PC.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vPC
+R1
+!i10b 1
+!s100 WAYGI_ic8iT0;XR[eT[na1
+I8^4j^QWh_ZjZF??UoT2ci3
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@p@c
+vPC_vlg_vec_tst
+R1
+!i10b 1
+!s100 GJBe]2QDU6KMznMaFHAUU2
+IP<1g4cfmm]UU9^`dzBob70
+R2
+R0
+R3
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@p@c_vlg_vec_tst

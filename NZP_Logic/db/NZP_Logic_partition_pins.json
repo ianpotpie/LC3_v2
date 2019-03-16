@@ -16,19 +16,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "Clock",
-					"strict" : false
-				},
-				{
 					"name" : "Bus_In[15]",
 					"strict" : false
 				},
 				{
-					"name" : "Load_NZP_Logic",
+					"name" : "Reset",
 					"strict" : false
 				},
 				{
-					"name" : "Reset",
+					"name" : "Clk",
+					"strict" : false
+				},
+				{
+					"name" : "Load_NZP_Logic",
 					"strict" : false
 				},
 				{

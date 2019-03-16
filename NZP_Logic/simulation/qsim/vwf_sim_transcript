@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off NZP_Logic -c NZP_Logic --vector_source="A:/Documents/GitHub/LC3_v2/NZP_Logic/Waveform.vwf" --testbench_file="A:/Documents/GitHub/LC3_v2/NZP_Logic/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off NZP_Logic -c NZP_Logic --vector_source="A:/Documents/GitHub/LC3_v2/NZP_Logic/Waveform1.vwf" --testbench_file="A:/Documents/GitHub/LC3_v2/NZP_Logic/simulation/qsim/Waveform1.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,8 +25,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Mar 13 18:05:45 2019
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off NZP_Logic -c NZP_Logic --vector_source=A:/Documents/GitHub/LC3_v2/NZP_Logic/Waveform.vwf --testbench_file=A:/Documents/GitHub/LC3_v2/NZP_Logic/simulation/qsim/Waveform.vwf.vt
+    Info: Processing started: Sat Mar 16 03:26:35 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off NZP_Logic -c NZP_Logic --vector_source=A:/Documents/GitHub/LC3_v2/NZP_Logic/Waveform1.vwf --testbench_file=A:/Documents/GitHub/LC3_v2/NZP_Logic/simulation/qsim/Waveform1.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Mar 13 18:05:46 2019
+    Info: Processing started: Sat Mar 16 03:26:36 2019
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=A:/Documents/GitHub/LC3_v2/NZP_Logic/simulation/qsim/ NZP_Logic -c NZP_Logic
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file NZP_Logic.vo in folder "A:/Documents/GitHub/LC3_v2/NZP_Logic/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Wed Mar 13 18:05:47 2019
+    Info: Processing ended: Sat Mar 16 03:26:37 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -79,32 +79,33 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-# do NZP_Logic.do
 
+# do NZP_Logic.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:05:47 on Mar 13,2019
+# Start time: 03:26:37 on Mar 16,2019
 # vlog -work work NZP_Logic.vo 
+
 # -- Compiling module NZP_Logic
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	NZP_Logic
-# End time: 18:05:47 on Mar 13,2019, Elapsed time: 0:00:00
+# End time: 03:26:37 on Mar 16,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:05:47 on Mar 13,2019
-# vlog -work work Waveform.vwf.vt 
+# Start time: 03:26:37 on Mar 16,2019
+# vlog -work work Waveform1.vwf.vt 
 # -- Compiling module NZP_Logic_vlg_vec_tst
 # 
 # Top level modules:
 # 	NZP_Logic_vlg_vec_tst
 
-# End time: 18:05:48 on Mar 13,2019, Elapsed time: 0:00:01
+# End time: 03:26:38 on Mar 16,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.NZP_Logic_vlg_vec_tst 
-# Start time: 18:05:48 on Mar 13,2019
+# Start time: 03:26:38 on Mar 16,2019
 # Loading work.NZP_Logic_vlg_vec_tst
 # Loading work.NZP_Logic
 # Loading work.hard_block
@@ -116,24 +117,24 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading altera_ver.dffeas
 # Loading altera_ver.PRIM_GDFF_LOW
-
 # after#26
-# ** Note: $finish    : Waveform.vwf.vt(54)
+# ** Note: $finish    : Waveform1.vwf.vt(54)
 #    Time: 1 us  Iteration: 0  Instance: /NZP_Logic_vlg_vec_tst
-# End time: 18:05:48 on Mar 13,2019, Elapsed time: 0:00:00
+
+# End time: 03:26:38 on Mar 16,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading A:/Documents/GitHub/LC3_v2/NZP_Logic/Waveform.vwf...
+Reading A:/Documents/GitHub/LC3_v2/NZP_Logic/Waveform1.vwf...
 
 Reading A:/Documents/GitHub/LC3_v2/NZP_Logic/simulation/qsim/NZP_Logic.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to A:/Documents/GitHub/LC3_v2/NZP_Logic/simulation/qsim/NZP_Logic_20190313180548.sim.vwf
+Writing the resulting VWF to A:/Documents/GitHub/LC3_v2/NZP_Logic/simulation/qsim/NZP_Logic_20190316032638.sim.vwf
 
 Finished VCD to VWF conversion.
 

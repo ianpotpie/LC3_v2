@@ -1,0 +1,173 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "MARMUX[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[8]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[9]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[10]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[11]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[12]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[13]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[14]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX[15]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Control",
+					"strict" : false
+				},
+				{
+					"name" : "IR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[5]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[6]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[8]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[9]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[10]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[11]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[12]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[13]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[14]",
+					"strict" : false
+				},
+				{
+					"name" : "MARMUX_Adder[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

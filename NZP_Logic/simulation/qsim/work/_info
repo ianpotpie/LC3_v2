@@ -9,21 +9,21 @@ z2
 cModel Technology
 Z0 dA:/Documents/GitHub/LC3_v2/NZP_Logic/simulation/qsim
 vhard_block
-Z1 !s110 1552514747
+Z1 !s110 1552721197
 !i10b 1
-!s100 ?VOh>0RKcd4Z[DO^c3aQ91
-I=c6@?Y9XgUMdfiO<4HG@G0
+!s100 z7VP=^zM[f3dCAhTeNa6e1
+I<7gRf3H>@@TVYSaXZP[hM2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1552514747
+Z3 w1552721197
 Z4 8NZP_Logic.vo
 Z5 FNZP_Logic.vo
-L0 1097
+L0 1115
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1552514747.000000
+Z7 !s108 1552721197.000000
 Z8 !s107 NZP_Logic.vo|
 Z9 !s90 -work|work|NZP_Logic.vo|
 !i113 1
@@ -32,8 +32,8 @@ Z11 tCvgOpt 0
 vNZP_Logic
 R1
 !i10b 1
-!s100 FZ25KagzHCe4n4N;CTh^]2
-IRK=nHMI:If5J7;=TIL?dM2
+!s100 OiH;FJ0<YRMm5A^[W`MWZ1
+IIIMGBLf54SCa4kdLD>4WI3
 R2
 R0
 R3
@@ -52,23 +52,23 @@ R10
 R11
 n@n@z@p_@logic
 vNZP_Logic_vlg_vec_tst
-R1
+!s110 1552721198
 !i10b 1
-!s100 @E3EoJl:oDVo?k=W^dDMY3
-I1K86VZbz1TVkW^3IRDh@11
+!s100 fmJdOiN`4OZB:R3e=bQ=01
+IcNmeJz9DYn`z:;[5je3=W2
 R2
 R0
-w1552514746
-8Waveform.vwf.vt
-FWaveform.vwf.vt
+w1552721196
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
 L0 29
 R6
 r1
 !s85 0
 31
 R7
-!s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
 !i113 1
 R10
 R11

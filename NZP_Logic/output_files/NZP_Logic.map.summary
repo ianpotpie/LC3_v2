@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Mar 13 18:04:48 2019
+Analysis & Synthesis Status : Successful - Sat Mar 16 03:23:59 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : NZP_Logic
 Top-level Entity Name : NZP_Logic
 Family : Cyclone IV E
-Total logic elements : 23
-    Total combinational functions : 23
+Total logic elements : 24
+    Total combinational functions : 24
     Dedicated logic registers : 16
 Total registers : 16
 Total pins : 22

@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dA:/Documents/GitHub/LC3_v2/MARMUX/simulation/qsim
+vhard_block
+Z1 !s110 1552723221
+!i10b 1
+!s100 EG59QOzAoUPX=nCHFOMi>3
+Ig>[o9B0G;EA6__8@HKdID1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1552723221
+Z4 8MARMUX.vo
+Z5 FMARMUX.vo
+L0 1020
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1552723221.000000
+Z8 !s107 MARMUX.vo|
+Z9 !s90 -work|work|MARMUX.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vMARMUX
+R1
+!i10b 1
+!s100 o<8zET_N44M`Cae0oC=0g3
+ILWa?ffS`P3dDW]SWicAVK2
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@m@a@r@m@u@x
+vMARMUX_vlg_vec_tst
+R1
+!i10b 1
+!s100 2n>;DLQX76B2:^Q[:fP?Q1
+IAnbKXOY98Z=3>ENcBNBKd3
+R2
+R0
+w1552723220
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@m@a@r@m@u@x_vlg_vec_tst

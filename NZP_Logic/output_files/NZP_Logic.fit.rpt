@@ -1,5 +1,5 @@
 Fitter report for NZP_Logic
-Wed Mar 13 18:04:52 2019
+Sat Mar 16 03:24:03 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -65,15 +65,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Mar 13 18:04:52 2019       ;
+; Fitter Status                      ; Successful - Sat Mar 16 03:24:03 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; NZP_Logic                                   ;
 ; Top-level Entity Name              ; NZP_Logic                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE10F17C7                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 23 / 10,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 23 / 10,320 ( < 1 % )                       ;
+; Total logic elements               ; 24 / 10,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 24 / 10,320 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 16 / 10,320 ( < 1 % )                       ;
 ; Total registers                    ; 16                                          ;
 ; Total pins                         ; 22 / 180 ( 12 % )                           ;
@@ -157,7 +157,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.2%      ;
+;     Processors 2-6         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -167,8 +167,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 95 ) ; 0.00 % ( 0 / 95 )          ; 0.00 % ( 0 / 95 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 95 ) ; 0.00 % ( 0 / 95 )          ; 0.00 % ( 0 / 95 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 96 ) ; 0.00 % ( 0 / 96 )          ; 0.00 % ( 0 / 96 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 96 ) ; 0.00 % ( 0 / 96 )          ; 0.00 % ( 0 / 96 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -191,7 +191,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 85 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 86 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -207,26 +207,26 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 23 / 10,320 ( < 1 % ) ;
-;     -- Combinational with no register       ; 7                     ;
+; Total logic elements                        ; 24 / 10,320 ( < 1 % ) ;
+;     -- Combinational with no register       ; 8                     ;
 ;     -- Register only                        ; 0                     ;
 ;     -- Combinational with a register        ; 16                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
 ;     -- 4 input functions                    ; 4                     ;
-;     -- 3 input functions                    ; 17                    ;
-;     -- <=2 input functions                  ; 2                     ;
+;     -- 3 input functions                    ; 1                     ;
+;     -- <=2 input functions                  ; 19                    ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 23                    ;
+;     -- normal mode                          ; 24                    ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
 ; Total registers*                            ; 16 / 11,172 ( < 1 % ) ;
 ;     -- Dedicated logic registers            ; 16 / 10,320 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 852 ( 0 % )       ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 2 / 645 ( < 1 % )     ;
+; Total LABs:  partially or completely used   ; 4 / 645 ( < 1 % )     ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 22 / 180 ( 12 % )     ;
 ;     -- Clock pins                           ; 2 / 3 ( 67 % )        ;
@@ -244,12 +244,12 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
-; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.1%    ;
-; Peak interconnect usage (total/H/V)         ; 0.3% / 0.1% / 0.6%    ;
-; Maximum fan-out                             ; 16                    ;
-; Highest non-global fan-out                  ; 16                    ;
-; Total fan-out                               ; 150                   ;
-; Average fan-out                             ; 1.60                  ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.0% / 0.2%    ;
+; Peak interconnect usage (total/H/V)         ; 0.4% / 0.1% / 0.7%    ;
+; Maximum fan-out                             ; 17                    ;
+; Highest non-global fan-out                  ; 17                    ;
+; Total fan-out                               ; 136                   ;
+; Average fan-out                             ; 1.43                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -262,26 +262,26 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 23 / 10320 ( < 1 % ) ; 0 / 10320 ( 0 % )              ;
-;     -- Combinational with no register       ; 7                    ; 0                              ;
+; Total logic elements                        ; 24 / 10320 ( < 1 % ) ; 0 / 10320 ( 0 % )              ;
+;     -- Combinational with no register       ; 8                    ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;     -- Combinational with a register        ; 16                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
 ;     -- 4 input functions                    ; 4                    ; 0                              ;
-;     -- 3 input functions                    ; 17                   ; 0                              ;
-;     -- <=2 input functions                  ; 2                    ; 0                              ;
+;     -- 3 input functions                    ; 1                    ; 0                              ;
+;     -- <=2 input functions                  ; 19                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 23                   ; 0                              ;
+;     -- normal mode                          ; 24                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 16                   ; 0                              ;
 ;     -- Dedicated logic registers            ; 16 / 10320 ( < 1 % ) ; 0 / 10320 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 2 / 645 ( < 1 % )    ; 0 / 645 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 4 / 645 ( < 1 % )    ; 0 / 645 ( 0 % )                ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 22                   ; 0                              ;
@@ -297,8 +297,8 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 145                  ; 5                              ;
-;     -- Registered Connections               ; 34                   ; 0                              ;
+;     -- Total Connections                    ; 131                  ; 5                              ;
+;     -- Registered Connections               ; 18                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -330,25 +330,25 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name           ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; Bus_In[0]      ; P1    ; 2        ; 0            ; 4            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[10]     ; P2    ; 2        ; 0            ; 4            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[11]     ; L1    ; 2        ; 0            ; 8            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[12]     ; N2    ; 2        ; 0            ; 7            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[13]     ; L2    ; 2        ; 0            ; 8            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[14]     ; L3    ; 2        ; 0            ; 7            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[0]      ; T2    ; 3        ; 3            ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[10]     ; G2    ; 1        ; 0            ; 18           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[11]     ; K1    ; 2        ; 0            ; 8            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[12]     ; J2    ; 2        ; 0            ; 10           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[13]     ; L6    ; 2        ; 0            ; 9            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[14]     ; K2    ; 2        ; 0            ; 8            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 ; Bus_In[15]     ; M2    ; 2        ; 0            ; 11           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[1]      ; K5    ; 2        ; 0            ; 6            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[2]      ; R1    ; 2        ; 0            ; 5            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[3]      ; N3    ; 3        ; 1            ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[4]      ; R3    ; 3        ; 1            ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[5]      ; P3    ; 3        ; 1            ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[6]      ; T4    ; 3        ; 5            ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[7]      ; T3    ; 3        ; 1            ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[8]      ; N1    ; 2        ; 0            ; 7            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Bus_In[9]      ; T2    ; 3        ; 3            ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Clock          ; E1    ; 1        ; 0            ; 11           ; 7            ; 16                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Load_NZP_Logic ; M1    ; 2        ; 0            ; 11           ; 21           ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Reset          ; L4    ; 2        ; 0            ; 6            ; 21           ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[1]      ; K6    ; 2        ; 0            ; 9            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[2]      ; L2    ; 2        ; 0            ; 8            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[3]      ; A3    ; 8        ; 3            ; 24           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[4]      ; G1    ; 1        ; 0            ; 18           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[5]      ; K5    ; 2        ; 0            ; 6            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[6]      ; L4    ; 2        ; 0            ; 6            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[7]      ; P2    ; 2        ; 0            ; 4            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[8]      ; J1    ; 2        ; 0            ; 10           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Bus_In[9]      ; L1    ; 2        ; 0            ; 8            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Clk            ; E1    ; 1        ; 0            ; 11           ; 7            ; 16                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Load_NZP_Logic ; J6    ; 2        ; 0            ; 10           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Reset          ; M1    ; 2        ; 0            ; 11           ; 21           ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -357,9 +357,9 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; N    ; K1    ; 2        ; 0            ; 8            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; P    ; R4    ; 3        ; 5            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Z    ; K2    ; 2        ; 0            ; 8            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; N    ; N2    ; 2        ; 0            ; 7            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; P    ; R1    ; 2        ; 0            ; 5            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Z    ; T3    ; 3        ; 1            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -389,14 +389,14 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 +----------+------------------+---------------+--------------+
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
-; 1        ; 5 / 17 ( 29 % )  ; 2.5V          ; --           ;
-; 2        ; 14 / 19 ( 74 % ) ; 2.5V          ; --           ;
-; 3        ; 7 / 26 ( 27 % )  ; 2.5V          ; --           ;
+; 1        ; 7 / 17 ( 41 % )  ; 2.5V          ; --           ;
+; 2        ; 16 / 19 ( 84 % ) ; 2.5V          ; --           ;
+; 3        ; 2 / 26 ( 8 % )   ; 2.5V          ; --           ;
 ; 4        ; 0 / 27 ( 0 % )   ; 2.5V          ; --           ;
 ; 5        ; 0 / 25 ( 0 % )   ; 2.5V          ; --           ;
 ; 6        ; 1 / 14 ( 7 % )   ; 2.5V          ; --           ;
 ; 7        ; 0 / 26 ( 0 % )   ; 2.5V          ; --           ;
-; 8        ; 0 / 26 ( 0 % )   ; 2.5V          ; --           ;
+; 8        ; 1 / 26 ( 4 % )   ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -407,7 +407,7 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 +----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 ; A1       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; A2       ; 194        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A3       ; 200        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A3       ; 200        ; 8        ; Bus_In[3]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A4       ; 196        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A5       ; 192        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A6       ; 188        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -469,7 +469,7 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ; D14      ; 150        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D15      ; 144        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; D16      ; 143        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; E1       ; 24         ; 1        ; Clock                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; E1       ; 24         ; 1        ; Clk                                                       ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; E2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E3       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; E4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -501,8 +501,8 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ; F14      ; 142        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; F15      ; 140        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F16      ; 139        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; G1       ; 14         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; G2       ; 13         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G1       ; 14         ; 1        ; Bus_In[4]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G2       ; 13         ; 1        ; Bus_In[10]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G3       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; G4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G5       ; 10         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -534,12 +534,12 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ; H14      ; 129        ; 6        ; ^CONF_DONE                                                ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; H15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H16      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; J1       ; 28         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; J2       ; 27         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J1       ; 28         ; 2        ; Bus_In[8]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J2       ; 27         ; 2        ; Bus_In[12]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J3       ; 22         ; 1        ; ^nCE                                                      ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; J4       ; 21         ; 1        ; #TDO                                                      ; output ;              ;         ; --         ;                 ; --       ; --           ;
 ; J5       ; 20         ; 1        ; #TMS                                                      ; input  ;              ;         ; --         ;                 ; --       ; --           ;
-; J6       ; 29         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J6       ; 29         ; 2        ; Load_NZP_Logic                                            ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J8       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J9       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -550,12 +550,12 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ; J14      ; 122        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J15      ; 121        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J16      ; 120        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; K1       ; 33         ; 2        ; N                                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K2       ; 32         ; 2        ; Z                                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K1       ; 33         ; 2        ; Bus_In[11]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K2       ; 32         ; 2        ; Bus_In[14]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; K3       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; K4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; K5       ; 39         ; 2        ; Bus_In[1]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K6       ; 30         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K5       ; 39         ; 2        ; Bus_In[5]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K6       ; 30         ; 2        ; Bus_In[1]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; K7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; K8       ; 60         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; K9       ; 76         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -566,12 +566,12 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ; K14      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; K15      ; 119        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K16      ; 118        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; L1       ; 35         ; 2        ; Bus_In[11]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L2       ; 34         ; 2        ; Bus_In[13]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L3       ; 36         ; 2        ; Bus_In[14]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L4       ; 40         ; 2        ; Reset                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L1       ; 35         ; 2        ; Bus_In[9]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L2       ; 34         ; 2        ; Bus_In[2]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L3       ; 36         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; L4       ; 40         ; 2        ; Bus_In[6]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; L5       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; L6       ; 31         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L6       ; 31         ; 2        ; Bus_In[13]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; L7       ; 65         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L8       ; 68         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L9       ; 77         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -582,7 +582,7 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ; L14      ; 113        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; L15      ; 116        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L16      ; 115        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; M1       ; 26         ; 2        ; Load_NZP_Logic                                            ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M1       ; 26         ; 2        ; Reset                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M2       ; 25         ; 2        ; Bus_In[15]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M3       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -598,9 +598,9 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ; M14      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M15      ; 126        ; 5        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; M16      ; 125        ; 5        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; N1       ; 38         ; 2        ; Bus_In[8]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N2       ; 37         ; 2        ; Bus_In[12]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N3       ; 45         ; 3        ; Bus_In[3]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N1       ; 38         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N2       ; 37         ; 2        ; N                                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N3       ; 45         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N4       ;            ;          ; VCCD_PLL1                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N5       ; 55         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N6       ; 56         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -614,9 +614,9 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ; N14      ; 106        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N15      ; 112        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N16      ; 111        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; P1       ; 44         ; 2        ; Bus_In[0]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; P2       ; 43         ; 2        ; Bus_In[10]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; P3       ; 46         ; 3        ; Bus_In[5]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; P1       ; 44         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; P2       ; 43         ; 2        ; Bus_In[7]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P3       ; 46         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P4       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; P5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P6       ; 58         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -630,10 +630,10 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ; P14      ; 98         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P15      ; 107        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P16      ; 108        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; R1       ; 42         ; 2        ; Bus_In[2]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R1       ; 42         ; 2        ; P                                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; R3       ; 47         ; 3        ; Bus_In[4]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; R4       ; 53         ; 3        ; P                                                         ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; R3       ; 47         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R4       ; 53         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R5       ; 61         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R6       ; 63         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R7       ; 66         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -647,9 +647,9 @@ The pin-out file can be found in A:/Documents/GitHub/LC3_v2/NZP_Logic/output_fil
 ; R15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R16      ; 109        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T1       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; T2       ; 52         ; 3        ; Bus_In[9]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; T3       ; 48         ; 3        ; Bus_In[7]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; T4       ; 54         ; 3        ; Bus_In[6]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T2       ; 52         ; 3        ; Bus_In[0]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T3       ; 48         ; 3        ; Z                                                         ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T4       ; 54         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; T5       ; 62         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; T6       ; 64         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; T7       ; 67         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -674,10 +674,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; N              ; Incomplete set of assignments ;
 ; Z              ; Incomplete set of assignments ;
 ; P              ; Incomplete set of assignments ;
-; Clock          ; Incomplete set of assignments ;
 ; Bus_In[15]     ; Incomplete set of assignments ;
-; Load_NZP_Logic ; Incomplete set of assignments ;
 ; Reset          ; Incomplete set of assignments ;
+; Clk            ; Incomplete set of assignments ;
+; Load_NZP_Logic ; Incomplete set of assignments ;
 ; Bus_In[14]     ; Incomplete set of assignments ;
 ; Bus_In[13]     ; Incomplete set of assignments ;
 ; Bus_In[12]     ; Incomplete set of assignments ;
@@ -696,10 +696,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; N              ; Missing location assignment   ;
 ; Z              ; Missing location assignment   ;
 ; P              ; Missing location assignment   ;
-; Clock          ; Missing location assignment   ;
 ; Bus_In[15]     ; Missing location assignment   ;
-; Load_NZP_Logic ; Missing location assignment   ;
 ; Reset          ; Missing location assignment   ;
+; Clk            ; Missing location assignment   ;
+; Load_NZP_Logic ; Missing location assignment   ;
 ; Bus_In[14]     ; Missing location assignment   ;
 ; Bus_In[13]     ; Missing location assignment   ;
 ; Bus_In[12]     ; Missing location assignment   ;
@@ -718,30 +718,30 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------+-------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                           ;
-+--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node     ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                        ; Entity Name        ; Library Name ;
-+--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------+--------------------+--------------+
-; |NZP_Logic                     ; 23 (7)      ; 16 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 22   ; 0            ; 7 (7)        ; 0 (0)             ; 16 (0)           ; |NZP_Logic                                                 ; NZP_Logic          ; work         ;
-;    |Negedge_16Register:Logic|  ; 16 (0)      ; 16 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (0)           ; |NZP_Logic|Negedge_16Register:Logic                        ; Negedge_16Register ; work         ;
-;       |Negedge_DFF:Neg_DFF_0|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_0  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_10| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_10 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_11| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_11 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_12| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_12 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_13| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_13 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_14| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_14 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_15| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_15 ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_1|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_1  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_2|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_2  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_3|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_3  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_4|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_4  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_5|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_5  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_6|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_6  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_7|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_7  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_8|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_8  ; Negedge_DFF        ; work         ;
-;       |Negedge_DFF:Neg_DFF_9|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_9  ; Negedge_DFF        ; work         ;
-+--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------+--------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                       ;
++-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node        ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                              ; Entity Name           ; Library Name ;
++-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------+-----------------------+--------------+
+; |NZP_Logic                        ; 24 (7)      ; 16 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 22   ; 0            ; 8 (7)        ; 0 (0)             ; 16 (0)           ; |NZP_Logic                                                       ; NZP_Logic             ; work         ;
+;    |Negedge_DSwitch_16Reg:Logic|  ; 17 (0)      ; 16 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 16 (0)           ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic                           ; Negedge_DSwitch_16Reg ; work         ;
+;       |Negedge_DSwitch:Switch_0|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_0  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_10| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_10 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_11| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_11 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_12| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_12 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_13| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_13 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_14| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_14 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_15| ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_15 ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_1|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_1  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_2|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_2  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_3|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_3  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_4|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_4  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_5|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_5  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_6|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_6  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_7|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_7  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_8|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_8  ; Negedge_DSwitch       ; work         ;
+;       |Negedge_DSwitch:Switch_9|  ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |NZP_Logic|Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_9  ; Negedge_DSwitch       ; work         ;
++-----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -753,103 +753,88 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; N              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; Z              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; P              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Clock          ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; Bus_In[15]     ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; Load_NZP_Logic ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; Reset          ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; Reset          ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; Clk            ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; Load_NZP_Logic ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; Bus_In[14]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; Bus_In[13]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; Bus_In[12]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; Bus_In[12]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; Bus_In[11]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; Bus_In[10]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; Bus_In[9]      ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; Bus_In[8]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; Bus_In[7]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; Bus_In[7]      ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; Bus_In[6]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; Bus_In[5]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; Bus_In[5]      ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; Bus_In[4]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; Bus_In[3]      ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; Bus_In[2]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; Bus_In[3]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; Bus_In[2]      ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; Bus_In[1]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; Bus_In[0]      ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; Bus_In[0]      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +----------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                           ;
-+------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                        ; Pad To Core Index ; Setting ;
-+------------------------------------------------------------+-------------------+---------+
-; Clock                                                      ;                   ;         ;
-; Bus_In[15]                                                 ;                   ;         ;
-; Load_NZP_Logic                                             ;                   ;         ;
-; Reset                                                      ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_15|Q   ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_14|Q   ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_13|Q   ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_12|Q   ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_11|Q   ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_10|Q   ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_9|Q    ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_8|Q    ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_7|Q    ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_6|Q    ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_5|Q    ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_4|Q    ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_3|Q    ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_2|Q    ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_1|Q    ; 0                 ; 6       ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_0|Q    ; 0                 ; 6       ;
-; Bus_In[14]                                                 ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_14|Q~0 ; 0                 ; 6       ;
-; Bus_In[13]                                                 ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_13|Q~0 ; 0                 ; 6       ;
-; Bus_In[12]                                                 ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_12|Q~0 ; 0                 ; 6       ;
-; Bus_In[11]                                                 ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_11|Q~0 ; 1                 ; 6       ;
-; Bus_In[10]                                                 ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_10|Q~0 ; 0                 ; 6       ;
-; Bus_In[9]                                                  ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_9|Q~0  ; 1                 ; 6       ;
-; Bus_In[8]                                                  ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_8|Q~0  ; 0                 ; 6       ;
-; Bus_In[7]                                                  ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_7|Q~0  ; 0                 ; 6       ;
-; Bus_In[6]                                                  ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_6|Q~0  ; 0                 ; 6       ;
-; Bus_In[5]                                                  ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_5|Q~0  ; 0                 ; 6       ;
-; Bus_In[4]                                                  ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_4|Q~0  ; 0                 ; 6       ;
-; Bus_In[3]                                                  ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_3|Q~0  ; 1                 ; 6       ;
-; Bus_In[2]                                                  ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_2|Q~0  ; 0                 ; 6       ;
-; Bus_In[1]                                                  ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_1|Q~0  ; 0                 ; 6       ;
-; Bus_In[0]                                                  ;                   ;         ;
-;      - Negedge_16Register:Logic|Negedge_DFF:Neg_DFF_0|Q~0  ; 1                 ; 6       ;
-+------------------------------------------------------------+-------------------+---------+
++------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                 ;
++------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                              ; Pad To Core Index ; Setting ;
++------------------------------------------------------------------+-------------------+---------+
+; Bus_In[15]                                                       ;                   ;         ;
+; Reset                                                            ;                   ;         ;
+; Clk                                                              ;                   ;         ;
+; Load_NZP_Logic                                                   ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_15|Q~1 ; 0                 ; 6       ;
+; Bus_In[14]                                                       ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_14|Q~0 ; 0                 ; 6       ;
+; Bus_In[13]                                                       ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_13|Q~0 ; 0                 ; 6       ;
+; Bus_In[12]                                                       ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_12|Q~0 ; 1                 ; 6       ;
+; Bus_In[11]                                                       ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_11|Q~0 ; 1                 ; 6       ;
+; Bus_In[10]                                                       ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_10|Q~0 ; 0                 ; 6       ;
+; Bus_In[9]                                                        ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_9|Q~0  ; 1                 ; 6       ;
+; Bus_In[8]                                                        ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_8|Q~0  ; 0                 ; 6       ;
+; Bus_In[7]                                                        ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_7|Q~0  ; 1                 ; 6       ;
+; Bus_In[6]                                                        ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_6|Q~0  ; 0                 ; 6       ;
+; Bus_In[5]                                                        ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_5|Q~0  ; 1                 ; 6       ;
+; Bus_In[4]                                                        ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_4|Q~0  ; 0                 ; 6       ;
+; Bus_In[3]                                                        ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_3|Q~0  ; 0                 ; 6       ;
+; Bus_In[2]                                                        ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_2|Q~0  ; 1                 ; 6       ;
+; Bus_In[1]                                                        ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_1|Q~0  ; 0                 ; 6       ;
+; Bus_In[0]                                                        ;                   ;         ;
+;      - Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_0|Q~0  ; 0                 ; 6       ;
++------------------------------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                         ;
-+-------+----------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; Name  ; Location ; Fan-Out ; Usage       ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------+----------+---------+-------------+--------+----------------------+------------------+---------------------------+
-; Clock ; PIN_E1   ; 16      ; Clock       ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; Reset ; PIN_L4   ; 16      ; Sync. clear ; no     ; --                   ; --               ; --                        ;
-+-------+----------+---------+-------------+--------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                      ;
++-----------------------------------------------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                      ; Location         ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-----------------------------------------------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Clk                                                       ; PIN_E1           ; 16      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; Negedge_DSwitch_16Reg:Logic|Negedge_DSwitch:Switch_15|Q~1 ; LCCOMB_X1_Y9_N10 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
++-----------------------------------------------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                             ;
-+-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name  ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Clock ; PIN_E1   ; 16      ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
-+-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                            ;
++------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Clk  ; PIN_E1   ; 16      ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
++------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +-----------------------------------------------+
@@ -857,59 +842,59 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 26 / 32,401 ( < 1 % ) ;
-; C16 interconnects     ; 0 / 1,326 ( 0 % )     ;
-; C4 interconnects      ; 21 / 21,816 ( < 1 % ) ;
-; Direct links          ; 0 / 32,401 ( 0 % )    ;
+; Block interconnects   ; 37 / 32,401 ( < 1 % ) ;
+; C16 interconnects     ; 2 / 1,326 ( < 1 % )   ;
+; C4 interconnects      ; 29 / 21,816 ( < 1 % ) ;
+; Direct links          ; 8 / 32,401 ( < 1 % )  ;
 ; Global clocks         ; 1 / 10 ( 10 % )       ;
-; Local interconnects   ; 18 / 10,320 ( < 1 % ) ;
+; Local interconnects   ; 8 / 10,320 ( < 1 % )  ;
 ; R24 interconnects     ; 0 / 1,289 ( 0 % )     ;
-; R4 interconnects      ; 3 / 28,186 ( < 1 % )  ;
+; R4 interconnects      ; 7 / 28,186 ( < 1 % )  ;
 +-----------------------+-----------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Logic Elements                                                        ;
-+---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 11.50) ; Number of LABs  (Total = 2) ;
-+---------------------------------------------+-----------------------------+
-; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 1                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 0                           ;
-; 12                                          ; 0                           ;
-; 13                                          ; 0                           ;
-; 14                                          ; 0                           ;
-; 15                                          ; 0                           ;
-; 16                                          ; 1                           ;
-+---------------------------------------------+-----------------------------+
++--------------------------------------------------------------------------+
+; LAB Logic Elements                                                       ;
++--------------------------------------------+-----------------------------+
+; Number of Logic Elements  (Average = 6.00) ; Number of LABs  (Total = 4) ;
++--------------------------------------------+-----------------------------+
+; 1                                          ; 1                           ;
+; 2                                          ; 1                           ;
+; 3                                          ; 0                           ;
+; 4                                          ; 0                           ;
+; 5                                          ; 0                           ;
+; 6                                          ; 0                           ;
+; 7                                          ; 1                           ;
+; 8                                          ; 0                           ;
+; 9                                          ; 0                           ;
+; 10                                         ; 0                           ;
+; 11                                         ; 0                           ;
+; 12                                         ; 0                           ;
+; 13                                         ; 0                           ;
+; 14                                         ; 1                           ;
+; 15                                         ; 0                           ;
+; 16                                         ; 0                           ;
++--------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 2.00) ; Number of LABs  (Total = 2) ;
+; LAB-wide Signals  (Average = 0.75) ; Number of LABs  (Total = 4) ;
 +------------------------------------+-----------------------------+
 ; 1 Clock                            ; 2                           ;
-; 1 Sync. clear                      ; 2                           ;
+; 1 Clock enable                     ; 1                           ;
 +------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 19.50) ; Number of LABs  (Total = 2) ;
+; Number of Signals Sourced  (Average = 10.00) ; Number of LABs  (Total = 4) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
-; 2                                            ; 0                           ;
+; 1                                            ; 1                           ;
+; 2                                            ; 1                           ;
 ; 3                                            ; 0                           ;
 ; 4                                            ; 0                           ;
 ; 5                                            ; 0                           ;
@@ -919,8 +904,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
 ; 11                                           ; 0                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 1                           ;
+; 12                                           ; 1                           ;
+; 13                                           ; 0                           ;
 ; 14                                           ; 0                           ;
 ; 15                                           ; 0                           ;
 ; 16                                           ; 0                           ;
@@ -932,46 +917,50 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 22                                           ; 0                           ;
 ; 23                                           ; 0                           ;
 ; 24                                           ; 0                           ;
-; 25                                           ; 0                           ;
-; 26                                           ; 1                           ;
+; 25                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 2.50) ; Number of LABs  (Total = 2) ;
+; Number of Signals Sourced Out  (Average = 4.00) ; Number of LABs  (Total = 4) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
+; 1                                               ; 1                           ;
 ; 2                                               ; 1                           ;
-; 3                                               ; 1                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 1                           ;
+; 6                                               ; 0                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
-+----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 12.50) ; Number of LABs  (Total = 2) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 0                           ;
-; 8                                            ; 0                           ;
-; 9                                            ; 1                           ;
-; 10                                           ; 0                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 0                           ;
-; 14                                           ; 0                           ;
-; 15                                           ; 0                           ;
-; 16                                           ; 1                           ;
-+----------------------------------------------+-----------------------------+
++---------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                       ;
++---------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 8.75) ; Number of LABs  (Total = 4) ;
++---------------------------------------------+-----------------------------+
+; 0                                           ; 0                           ;
+; 1                                           ; 0                           ;
+; 2                                           ; 1                           ;
+; 3                                           ; 0                           ;
+; 4                                           ; 1                           ;
+; 5                                           ; 0                           ;
+; 6                                           ; 0                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 0                           ;
+; 9                                           ; 0                           ;
+; 10                                          ; 0                           ;
+; 11                                          ; 0                           ;
+; 12                                          ; 0                           ;
+; 13                                          ; 1                           ;
+; 14                                          ; 0                           ;
+; 15                                          ; 0                           ;
+; 16                                          ; 1                           ;
++---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------+
@@ -1038,10 +1027,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; N                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Z                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; P                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Clock              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Bus_In[15]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Load_NZP_Logic     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Reset              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Clk                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Load_NZP_Logic     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Bus_In[14]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Bus_In[13]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Bus_In[12]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1131,7 +1120,7 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node Clock~input (placed in PIN E1 (CLK1, DIFFCLK_0n)) File: A:/Documents/GitHub/LC3_v2/NZP_Logic/NZP_Logic.v Line: 3
+Info (176353): Automatically promoted node Clk~input (placed in PIN E1 (CLK1, DIFFCLK_0n)) File: A:/Documents/GitHub/LC3_v2/NZP_Logic/NZP_Logic.v Line: 3
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1149,7 +1138,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  13 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  26 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  26 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1161,18 +1150,19 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y0 to location X10_Y11
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
+    Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.03 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file A:/Documents/GitHub/LC3_v2/NZP_Logic/output_files/NZP_Logic.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5631 megabytes
-    Info: Processing ended: Wed Mar 13 18:04:52 2019
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 5632 megabytes
+    Info: Processing ended: Sat Mar 16 03:24:03 2019
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:04
 
 
