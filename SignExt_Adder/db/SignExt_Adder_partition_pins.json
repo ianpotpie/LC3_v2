@@ -1,0 +1,257 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Adder[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Adder[15]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ADR1MUX_Control",
+					"strict" : false
+				},
+				{
+					"name" : "IR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ADR2MUX_Control[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ADR2MUX_Control[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SR1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

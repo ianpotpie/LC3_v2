@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dA:/Documents/GitHub/LC3_v2/SignExt_Adder/simulation/qsim
+vhard_block
+Z1 !s110 1552726675
+!i10b 1
+!s100 ZNWYX>U=F3LZAW0Y_Md^T0
+I^cJH1K@ITIa_TcTWDDEcO3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1552726675
+Z4 8SignExt_Adder.vo
+Z5 FSignExt_Adder.vo
+L0 1794
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1552726675.000000
+Z8 !s107 SignExt_Adder.vo|
+Z9 !s90 -work|work|SignExt_Adder.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vSignExt_Adder
+R1
+!i10b 1
+!s100 @k9f^^5Y=WZlFzWki>5H51
+IjkCHhZed`aHA2W:X;9:2g2
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@sign@ext_@adder
+vSignExt_Adder_vlg_vec_tst
+R1
+!i10b 1
+!s100 8c86IfR@5X=abR_?JNfJg3
+IFYX2m]ajmX]Ya]1C2jB8M2
+R2
+R0
+w1552726674
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@sign@ext_@adder_vlg_vec_tst
