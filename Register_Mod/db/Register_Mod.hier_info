@@ -1,0 +1,1477 @@
+|Register_Mod
+Clk => Clk.IN8
+Reset => Reset.IN8
+Bus_In[0] => Bus_In[0].IN8
+Bus_In[1] => Bus_In[1].IN8
+Bus_In[2] => Bus_In[2].IN8
+Bus_In[3] => Bus_In[3].IN8
+Bus_In[4] => Bus_In[4].IN8
+Bus_In[5] => Bus_In[5].IN8
+Bus_In[6] => Bus_In[6].IN8
+Bus_In[7] => Bus_In[7].IN8
+Bus_In[8] => Bus_In[8].IN8
+Bus_In[9] => Bus_In[9].IN8
+Bus_In[10] => Bus_In[10].IN8
+Bus_In[11] => Bus_In[11].IN8
+Bus_In[12] => Bus_In[12].IN8
+Bus_In[13] => Bus_In[13].IN8
+Bus_In[14] => Bus_In[14].IN8
+Bus_In[15] => Bus_In[15].IN8
+DR_Control[0] => DR_Load.IN1
+DR_Control[0] => DR_Load.IN1
+DR_Control[0] => DR_Load.IN1
+DR_Control[0] => DR_Load.IN1
+DR_Control[0] => DR_Load.IN1
+DR_Control[0] => DR_Load.IN1
+DR_Control[0] => DR_Load.IN1
+DR_Control[0] => DR_Load.IN1
+DR_Control[1] => DR_Load.IN0
+DR_Control[1] => DR_Load.IN0
+DR_Control[1] => DR_Load.IN0
+DR_Control[1] => DR_Load.IN0
+DR_Control[1] => DR_Load.IN0
+DR_Control[1] => DR_Load.IN0
+DR_Control[1] => DR_Load.IN0
+DR_Control[1] => DR_Load.IN0
+DR_Control[2] => DR_Load.IN1
+DR_Control[2] => DR_Load.IN1
+DR_Control[2] => DR_Load.IN1
+DR_Control[2] => DR_Load.IN1
+DR_Control[2] => DR_Load.IN1
+DR_Control[2] => DR_Load.IN1
+DR_Control[2] => DR_Load.IN1
+DR_Control[2] => DR_Load.IN1
+Load_Reg => DR_Load.IN1
+Load_Reg => DR_Load.IN1
+Load_Reg => DR_Load.IN1
+Load_Reg => DR_Load.IN1
+Load_Reg => DR_Load.IN1
+Load_Reg => DR_Load.IN1
+Load_Reg => DR_Load.IN1
+Load_Reg => DR_Load.IN1
+SR2_Control[0] => SR2.IN1
+SR2_Control[0] => SR2.IN1
+SR2_Control[0] => SR2.IN1
+SR2_Control[0] => SR2.IN1
+SR2_Control[0] => SR2.IN1
+SR2_Control[0] => SR2.IN1
+SR2_Control[0] => SR2.IN1
+SR2_Control[0] => SR2.IN1
+SR2_Control[1] => SR2.IN0
+SR2_Control[1] => SR2.IN0
+SR2_Control[1] => SR2.IN0
+SR2_Control[1] => SR2.IN0
+SR2_Control[2] => SR2.IN1
+SR2_Control[2] => SR2.IN1
+SR2_Control[2] => SR2.IN1
+SR2_Control[2] => SR2.IN1
+SR1_Control[0] => SR1.IN1
+SR1_Control[0] => SR1.IN1
+SR1_Control[0] => SR1.IN1
+SR1_Control[0] => SR1.IN1
+SR1_Control[0] => SR1.IN1
+SR1_Control[0] => SR1.IN1
+SR1_Control[0] => SR1.IN1
+SR1_Control[0] => SR1.IN1
+SR1_Control[1] => SR1.IN0
+SR1_Control[1] => SR1.IN0
+SR1_Control[1] => SR1.IN0
+SR1_Control[1] => SR1.IN0
+SR1_Control[2] => SR1.IN1
+SR1_Control[2] => SR1.IN1
+SR1_Control[2] => SR1.IN1
+SR1_Control[2] => SR1.IN1
+Reg_View_Control[0] => Reg_View.IN1
+Reg_View_Control[0] => Reg_View.IN1
+Reg_View_Control[0] => Reg_View.IN1
+Reg_View_Control[0] => Reg_View.IN1
+Reg_View_Control[0] => Reg_View.IN1
+Reg_View_Control[0] => Reg_View.IN1
+Reg_View_Control[0] => Reg_View.IN1
+Reg_View_Control[0] => Reg_View.IN1
+Reg_View_Control[1] => Reg_View.IN0
+Reg_View_Control[1] => Reg_View.IN0
+Reg_View_Control[1] => Reg_View.IN0
+Reg_View_Control[1] => Reg_View.IN0
+Reg_View_Control[2] => Reg_View.IN1
+Reg_View_Control[2] => Reg_View.IN1
+Reg_View_Control[2] => Reg_View.IN1
+Reg_View_Control[2] => Reg_View.IN1
+SR2[0] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[1] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[2] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[3] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[4] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[5] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[6] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[7] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[8] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[9] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[10] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[11] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[12] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[13] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[14] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR2[15] <= SR2.DB_MAX_OUTPUT_PORT_TYPE
+SR1[0] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[1] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[2] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[3] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[4] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[5] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[6] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[7] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[8] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[9] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[10] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[11] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[12] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[13] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[14] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+SR1[15] <= SR1.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[0] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[1] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[2] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[3] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[4] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[5] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[6] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[7] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[8] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[9] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[10] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[11] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[12] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[13] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[14] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+Reg_View[15] <= Reg_View.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0
+Clk => Clk.IN16
+Reset => Reset.IN16
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+D[5] => D[5].IN1
+D[6] => D[6].IN1
+D[7] => D[7].IN1
+D[8] => D[8].IN1
+D[9] => D[9].IN1
+D[10] => D[10].IN1
+D[11] => D[11].IN1
+D[12] => D[12].IN1
+D[13] => D[13].IN1
+D[14] => D[14].IN1
+D[15] => D[15].IN1
+WE => WE.IN16
+Q[0] <= Negedge_DSwitch:Switch_0.port4
+Q[1] <= Negedge_DSwitch:Switch_1.port4
+Q[2] <= Negedge_DSwitch:Switch_2.port4
+Q[3] <= Negedge_DSwitch:Switch_3.port4
+Q[4] <= Negedge_DSwitch:Switch_4.port4
+Q[5] <= Negedge_DSwitch:Switch_5.port4
+Q[6] <= Negedge_DSwitch:Switch_6.port4
+Q[7] <= Negedge_DSwitch:Switch_7.port4
+Q[8] <= Negedge_DSwitch:Switch_8.port4
+Q[9] <= Negedge_DSwitch:Switch_9.port4
+Q[10] <= Negedge_DSwitch:Switch_10.port4
+Q[11] <= Negedge_DSwitch:Switch_11.port4
+Q[12] <= Negedge_DSwitch:Switch_12.port4
+Q[13] <= Negedge_DSwitch:Switch_13.port4
+Q[14] <= Negedge_DSwitch:Switch_14.port4
+Q[15] <= Negedge_DSwitch:Switch_15.port4
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_15
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_14
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_13
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_12
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_11
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_10
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_9
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_8
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_7
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_6
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_5
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_4
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_3
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_2
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_1
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg0|Negedge_DSwitch:Switch_0
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1
+Clk => Clk.IN16
+Reset => Reset.IN16
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+D[5] => D[5].IN1
+D[6] => D[6].IN1
+D[7] => D[7].IN1
+D[8] => D[8].IN1
+D[9] => D[9].IN1
+D[10] => D[10].IN1
+D[11] => D[11].IN1
+D[12] => D[12].IN1
+D[13] => D[13].IN1
+D[14] => D[14].IN1
+D[15] => D[15].IN1
+WE => WE.IN16
+Q[0] <= Negedge_DSwitch:Switch_0.port4
+Q[1] <= Negedge_DSwitch:Switch_1.port4
+Q[2] <= Negedge_DSwitch:Switch_2.port4
+Q[3] <= Negedge_DSwitch:Switch_3.port4
+Q[4] <= Negedge_DSwitch:Switch_4.port4
+Q[5] <= Negedge_DSwitch:Switch_5.port4
+Q[6] <= Negedge_DSwitch:Switch_6.port4
+Q[7] <= Negedge_DSwitch:Switch_7.port4
+Q[8] <= Negedge_DSwitch:Switch_8.port4
+Q[9] <= Negedge_DSwitch:Switch_9.port4
+Q[10] <= Negedge_DSwitch:Switch_10.port4
+Q[11] <= Negedge_DSwitch:Switch_11.port4
+Q[12] <= Negedge_DSwitch:Switch_12.port4
+Q[13] <= Negedge_DSwitch:Switch_13.port4
+Q[14] <= Negedge_DSwitch:Switch_14.port4
+Q[15] <= Negedge_DSwitch:Switch_15.port4
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_15
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_14
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_13
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_12
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_11
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_10
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_9
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_8
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_7
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_6
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_5
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_4
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_3
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_2
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_1
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg1|Negedge_DSwitch:Switch_0
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2
+Clk => Clk.IN16
+Reset => Reset.IN16
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+D[5] => D[5].IN1
+D[6] => D[6].IN1
+D[7] => D[7].IN1
+D[8] => D[8].IN1
+D[9] => D[9].IN1
+D[10] => D[10].IN1
+D[11] => D[11].IN1
+D[12] => D[12].IN1
+D[13] => D[13].IN1
+D[14] => D[14].IN1
+D[15] => D[15].IN1
+WE => WE.IN16
+Q[0] <= Negedge_DSwitch:Switch_0.port4
+Q[1] <= Negedge_DSwitch:Switch_1.port4
+Q[2] <= Negedge_DSwitch:Switch_2.port4
+Q[3] <= Negedge_DSwitch:Switch_3.port4
+Q[4] <= Negedge_DSwitch:Switch_4.port4
+Q[5] <= Negedge_DSwitch:Switch_5.port4
+Q[6] <= Negedge_DSwitch:Switch_6.port4
+Q[7] <= Negedge_DSwitch:Switch_7.port4
+Q[8] <= Negedge_DSwitch:Switch_8.port4
+Q[9] <= Negedge_DSwitch:Switch_9.port4
+Q[10] <= Negedge_DSwitch:Switch_10.port4
+Q[11] <= Negedge_DSwitch:Switch_11.port4
+Q[12] <= Negedge_DSwitch:Switch_12.port4
+Q[13] <= Negedge_DSwitch:Switch_13.port4
+Q[14] <= Negedge_DSwitch:Switch_14.port4
+Q[15] <= Negedge_DSwitch:Switch_15.port4
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_15
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_14
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_13
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_12
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_11
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_10
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_9
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_8
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_7
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_6
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_5
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_4
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_3
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_2
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_1
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg2|Negedge_DSwitch:Switch_0
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3
+Clk => Clk.IN16
+Reset => Reset.IN16
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+D[5] => D[5].IN1
+D[6] => D[6].IN1
+D[7] => D[7].IN1
+D[8] => D[8].IN1
+D[9] => D[9].IN1
+D[10] => D[10].IN1
+D[11] => D[11].IN1
+D[12] => D[12].IN1
+D[13] => D[13].IN1
+D[14] => D[14].IN1
+D[15] => D[15].IN1
+WE => WE.IN16
+Q[0] <= Negedge_DSwitch:Switch_0.port4
+Q[1] <= Negedge_DSwitch:Switch_1.port4
+Q[2] <= Negedge_DSwitch:Switch_2.port4
+Q[3] <= Negedge_DSwitch:Switch_3.port4
+Q[4] <= Negedge_DSwitch:Switch_4.port4
+Q[5] <= Negedge_DSwitch:Switch_5.port4
+Q[6] <= Negedge_DSwitch:Switch_6.port4
+Q[7] <= Negedge_DSwitch:Switch_7.port4
+Q[8] <= Negedge_DSwitch:Switch_8.port4
+Q[9] <= Negedge_DSwitch:Switch_9.port4
+Q[10] <= Negedge_DSwitch:Switch_10.port4
+Q[11] <= Negedge_DSwitch:Switch_11.port4
+Q[12] <= Negedge_DSwitch:Switch_12.port4
+Q[13] <= Negedge_DSwitch:Switch_13.port4
+Q[14] <= Negedge_DSwitch:Switch_14.port4
+Q[15] <= Negedge_DSwitch:Switch_15.port4
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_15
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_14
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_13
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_12
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_11
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_10
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_9
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_8
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_7
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_6
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_5
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_4
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_3
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_2
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_1
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg3|Negedge_DSwitch:Switch_0
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4
+Clk => Clk.IN16
+Reset => Reset.IN16
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+D[5] => D[5].IN1
+D[6] => D[6].IN1
+D[7] => D[7].IN1
+D[8] => D[8].IN1
+D[9] => D[9].IN1
+D[10] => D[10].IN1
+D[11] => D[11].IN1
+D[12] => D[12].IN1
+D[13] => D[13].IN1
+D[14] => D[14].IN1
+D[15] => D[15].IN1
+WE => WE.IN16
+Q[0] <= Negedge_DSwitch:Switch_0.port4
+Q[1] <= Negedge_DSwitch:Switch_1.port4
+Q[2] <= Negedge_DSwitch:Switch_2.port4
+Q[3] <= Negedge_DSwitch:Switch_3.port4
+Q[4] <= Negedge_DSwitch:Switch_4.port4
+Q[5] <= Negedge_DSwitch:Switch_5.port4
+Q[6] <= Negedge_DSwitch:Switch_6.port4
+Q[7] <= Negedge_DSwitch:Switch_7.port4
+Q[8] <= Negedge_DSwitch:Switch_8.port4
+Q[9] <= Negedge_DSwitch:Switch_9.port4
+Q[10] <= Negedge_DSwitch:Switch_10.port4
+Q[11] <= Negedge_DSwitch:Switch_11.port4
+Q[12] <= Negedge_DSwitch:Switch_12.port4
+Q[13] <= Negedge_DSwitch:Switch_13.port4
+Q[14] <= Negedge_DSwitch:Switch_14.port4
+Q[15] <= Negedge_DSwitch:Switch_15.port4
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_15
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_14
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_13
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_12
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_11
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_10
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_9
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_8
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_7
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_6
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_5
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_4
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_3
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_2
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_1
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg4|Negedge_DSwitch:Switch_0
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5
+Clk => Clk.IN16
+Reset => Reset.IN16
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+D[5] => D[5].IN1
+D[6] => D[6].IN1
+D[7] => D[7].IN1
+D[8] => D[8].IN1
+D[9] => D[9].IN1
+D[10] => D[10].IN1
+D[11] => D[11].IN1
+D[12] => D[12].IN1
+D[13] => D[13].IN1
+D[14] => D[14].IN1
+D[15] => D[15].IN1
+WE => WE.IN16
+Q[0] <= Negedge_DSwitch:Switch_0.port4
+Q[1] <= Negedge_DSwitch:Switch_1.port4
+Q[2] <= Negedge_DSwitch:Switch_2.port4
+Q[3] <= Negedge_DSwitch:Switch_3.port4
+Q[4] <= Negedge_DSwitch:Switch_4.port4
+Q[5] <= Negedge_DSwitch:Switch_5.port4
+Q[6] <= Negedge_DSwitch:Switch_6.port4
+Q[7] <= Negedge_DSwitch:Switch_7.port4
+Q[8] <= Negedge_DSwitch:Switch_8.port4
+Q[9] <= Negedge_DSwitch:Switch_9.port4
+Q[10] <= Negedge_DSwitch:Switch_10.port4
+Q[11] <= Negedge_DSwitch:Switch_11.port4
+Q[12] <= Negedge_DSwitch:Switch_12.port4
+Q[13] <= Negedge_DSwitch:Switch_13.port4
+Q[14] <= Negedge_DSwitch:Switch_14.port4
+Q[15] <= Negedge_DSwitch:Switch_15.port4
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_15
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_14
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_13
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_12
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_11
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_10
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_9
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_8
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_7
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_6
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_5
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_4
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_3
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_2
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_1
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg5|Negedge_DSwitch:Switch_0
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6
+Clk => Clk.IN16
+Reset => Reset.IN16
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+D[5] => D[5].IN1
+D[6] => D[6].IN1
+D[7] => D[7].IN1
+D[8] => D[8].IN1
+D[9] => D[9].IN1
+D[10] => D[10].IN1
+D[11] => D[11].IN1
+D[12] => D[12].IN1
+D[13] => D[13].IN1
+D[14] => D[14].IN1
+D[15] => D[15].IN1
+WE => WE.IN16
+Q[0] <= Negedge_DSwitch:Switch_0.port4
+Q[1] <= Negedge_DSwitch:Switch_1.port4
+Q[2] <= Negedge_DSwitch:Switch_2.port4
+Q[3] <= Negedge_DSwitch:Switch_3.port4
+Q[4] <= Negedge_DSwitch:Switch_4.port4
+Q[5] <= Negedge_DSwitch:Switch_5.port4
+Q[6] <= Negedge_DSwitch:Switch_6.port4
+Q[7] <= Negedge_DSwitch:Switch_7.port4
+Q[8] <= Negedge_DSwitch:Switch_8.port4
+Q[9] <= Negedge_DSwitch:Switch_9.port4
+Q[10] <= Negedge_DSwitch:Switch_10.port4
+Q[11] <= Negedge_DSwitch:Switch_11.port4
+Q[12] <= Negedge_DSwitch:Switch_12.port4
+Q[13] <= Negedge_DSwitch:Switch_13.port4
+Q[14] <= Negedge_DSwitch:Switch_14.port4
+Q[15] <= Negedge_DSwitch:Switch_15.port4
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_15
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_14
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_13
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_12
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_11
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_10
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_9
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_8
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_7
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_6
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_5
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_4
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_3
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_2
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_1
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg6|Negedge_DSwitch:Switch_0
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7
+Clk => Clk.IN16
+Reset => Reset.IN16
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+D[5] => D[5].IN1
+D[6] => D[6].IN1
+D[7] => D[7].IN1
+D[8] => D[8].IN1
+D[9] => D[9].IN1
+D[10] => D[10].IN1
+D[11] => D[11].IN1
+D[12] => D[12].IN1
+D[13] => D[13].IN1
+D[14] => D[14].IN1
+D[15] => D[15].IN1
+WE => WE.IN16
+Q[0] <= Negedge_DSwitch:Switch_0.port4
+Q[1] <= Negedge_DSwitch:Switch_1.port4
+Q[2] <= Negedge_DSwitch:Switch_2.port4
+Q[3] <= Negedge_DSwitch:Switch_3.port4
+Q[4] <= Negedge_DSwitch:Switch_4.port4
+Q[5] <= Negedge_DSwitch:Switch_5.port4
+Q[6] <= Negedge_DSwitch:Switch_6.port4
+Q[7] <= Negedge_DSwitch:Switch_7.port4
+Q[8] <= Negedge_DSwitch:Switch_8.port4
+Q[9] <= Negedge_DSwitch:Switch_9.port4
+Q[10] <= Negedge_DSwitch:Switch_10.port4
+Q[11] <= Negedge_DSwitch:Switch_11.port4
+Q[12] <= Negedge_DSwitch:Switch_12.port4
+Q[13] <= Negedge_DSwitch:Switch_13.port4
+Q[14] <= Negedge_DSwitch:Switch_14.port4
+Q[15] <= Negedge_DSwitch:Switch_15.port4
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_15
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_14
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_13
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_12
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_11
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_10
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_9
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_8
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_7
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_6
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_5
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_4
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_3
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_2
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_1
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register_Mod|Negedge_DSwitch_16Reg:Reg7|Negedge_DSwitch:Switch_0
+Clk => Q~reg0.CLK
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+WE => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
