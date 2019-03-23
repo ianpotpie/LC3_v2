@@ -1,15 +1,17 @@
-module Memory (Clk,
-					Clk_View,
-					Reset,
-					Load_MDR,
-					Load_MAR,
-					Memory_WE,
-					Bus_In,
-					Memory_Out,
-					View_WE,
-					View_Address,
-					View_Data,
-					View_Out);
+module Memory (
+		 Clk,
+		 Clk_View,
+		 Reset,
+		 Load_MDR,
+		 Load_MAR,
+		 Memory_WE,
+		 Bus_In,
+		 Memory_Out,
+		 View_WE,
+		 View_Address,
+		 View_Data,
+		 View_Out);
+
 //Init
 	//Computer
 		input Reset;

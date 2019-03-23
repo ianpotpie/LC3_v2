@@ -1,4 +1,11 @@
-module ALU (IR,SR2MUX_Control,ALUMUX_Control,SR1_In,SR2_In,ALU_Out); //ALU can perform Addition, bit-wise AND, and bit-wise NOT
+module ALU (
+		 IR,
+		 SR2MUX_Control,
+		 ALUMUX_Control,
+		 SR1_In,
+		 SR2_In,
+		 ALU_Out); //ALU can perform Addition, bit-wise AND, and bit-wise NOT
+
 //Init
 	input [15:0]IR;		//
 	input SR2MUX_Control;

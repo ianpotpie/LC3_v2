@@ -1,4 +1,11 @@
-module NZP_Logic (Clk,Reset,Bus_In,Load_NZP_Logic,N,Z,P); //This Module Loads the bus when the load signal is on, and detects whether the loaded value is negative (N), zero (Z), or positive (P)
+module NZP_Logic (
+		 Clk,
+		 Reset,
+		 Bus_In,
+		 Load_NZP_Logic,
+		 N,
+		 Z,
+		 P); //This Module Loads the bus when the load signal is on, and detects whether the loaded value is negative (N), zero (Z), or positive (P)
 //init
 	input Clk;
 	input Reset; //resets Logic register

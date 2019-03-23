@@ -1,4 +1,11 @@
-module PC (Clk,Reset,Load_PC,PCMUX_Control,PCMUX_Bus,PCMUX_Adder,PC);
+module PC (Clk,
+		 Reset,
+		 Load_PC,
+		 PCMUX_Control,
+		 PCMUX_Bus,
+		 PCMUX_Adder,
+		 PC);
+
 //init
 	input Clk; 						//Clock input
 	input Reset; 					//Resets PC Reg

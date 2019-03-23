@@ -1,4 +1,9 @@
-module SignExt_Adder (IR,PC,SR1,ADR2MUX_Control,ADR1MUX_Control,Adder);
+module SignExt_Adder (IR,
+							 PC,
+							 SR1,
+							 ADR2MUX_Control,
+							 ADR1MUX_Control,
+							 Adder);
 //init
 	input [15:0]IR;					//inputs the current value of IR
 	input [15:0]PC;					//Inputs the current value of hte PC

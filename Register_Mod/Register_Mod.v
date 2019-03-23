@@ -1,4 +1,15 @@
-module Register_Mod (Clk,Reset,Bus_In,DR_Control,Load_Reg,SR2_Control,SR1_Control,Reg_View_Control,SR2,SR1,Reg_View);
+module Register_Mod (
+		 Clk,
+		 Reset,
+		 Bus_In,
+		 DR_Control,
+		 Load_Reg,
+		 SR2_Control,
+		 SR1_Control,
+		 Reg_View_Control,
+		 SR2,
+		 SR1,
+		 Reg_View);
 //init
 	input Clk;				//Clock signal
 	input Reset;			//Resets the all Registers

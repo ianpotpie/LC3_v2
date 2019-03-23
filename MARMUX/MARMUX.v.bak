@@ -1,9 +1,4 @@
-module MARMUX (
-		 MARMUX_Adder,
-		 IR,
-		 MARMUX_Control,
-		 MARMUX);
-		 
+module MARMUX (MARMUX_Adder,IR,MARMUX_Control,MARMUX);
 //init
 	input [15:0]MARMUX_Adder;			//Input of the MARMUX fromt he Adder
 	input [15:0]IR;						//Input IR
