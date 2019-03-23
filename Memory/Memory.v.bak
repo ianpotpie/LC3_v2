@@ -1,0 +1,23 @@
+module Memory (Load_MDR,Load_MAR,Memory_WE,Bus_In,Mem_Out,View_WE,View_Address,View_Data,View_Out);
+//Init
+	//Computer
+		input Load_MDR;
+		input Load_MAR;
+		input Memory_WE;
+	
+		input [15:0]Bus_In;
+	
+		output [15:0]Bus_Out;
+	//View
+		input View_WE;
+		
+		input [15:0]View_Address;
+		input [15:0]View_Data;
+	
+		output [15:0]View_Out;
+//Structural Verilog
+	//MAR
+	
+	//MDR
+
+endmodule

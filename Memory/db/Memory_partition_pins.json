@@ -1,0 +1,357 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Memory_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_Out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Memory_WE",
+					"strict" : false
+				},
+				{
+					"name" : "View_WE",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[14]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[15]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				},
+				{
+					"name" : "Clk_View",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[4]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[5]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[6]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[7]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[8]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[9]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[10]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[11]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Address[12]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "View_Data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Load_MAR",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Load_MDR",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus_In[12]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

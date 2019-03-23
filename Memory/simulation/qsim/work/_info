@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dA:/Documents/GitHub/LC3_v2/Memory/simulation/qsim
+vhard_block
+Z1 !s110 1553308319
+!i10b 1
+!s100 Nia^Q9jLKljQ:0^Wi`AH>0
+IPDAEGAY=hCl^^Mc]K=naF0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1553308319
+Z4 8Memory.vo
+Z5 FMemory.vo
+L0 16538
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1553308319.000000
+Z8 !s107 Memory.vo|
+Z9 !s90 -work|work|Memory.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vMemory
+R1
+!i10b 1
+!s100 hkz34S?PjbQg3Az;CAc5X0
+I^?Ge7`:f;AYcfUJY[7h<l2
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@memory
+vMemory_vlg_vec_tst
+R1
+!i10b 1
+!s100 X6N2z_]2M8_o0FMdHR=aA1
+IHbAYZh]8W7?1OJ>JY;OFQ2
+R2
+R0
+w1553308318
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@memory_vlg_vec_tst
